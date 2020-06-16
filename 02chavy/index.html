@@ -6,9 +6,51 @@
 	<title>chavy</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
-	<link rel="stylesheet" href="js/jquery-3.1.1.min.js">
+	<link rel="stylesheet" href="js/jquw180ery-3.1.1.min.js">
 	<link rel="stylesheet" href="js/jquery.bxslider.js">
+
+	<style>
+		div.header{
+			width: 1210px;height: 110px;margin: 0 auto;
+			background-color:skyblue;
+			position: relative;
+		}
+		div.header h1{
+			width: 180px;line-height: 110px;
+			background-color:orange;
+			float: left;text-align: center;
+		}
+		div.header .gnbWrap>{
+			background-color:gray;
+			width: 570px;height: 110px;position: absolute;
+			right: 0;top: 0;
+		}
+		div.header .gnbWrap li{float: left;width:15%;}
+		div.header .gnbWrap a{display: block;text-align: center;line-height: 110px;}
+
+		div.header .utilMenu{
+			width: 260px;height: 110px;
+			background-color:gray;position: absolute;
+			right: 0;top: 0;
+		}
+		div.header .utilMenu>li{float: left;width: 50%;}
+		div.header .utilMenu>li>a{display: block;text-align: center;line-height: 110px;}
+	</style>
 <body>
-	
+	<div class="header clearfix">
+		<h1 class="logo">chavy</h1>
+		<div class="gnbWrap">
+			<ul class="gnbMenu clearfix">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">How it Works</a></li>
+				<li><a href="#">Company</a></li>
+				<li><a href="#">Career</a></li>
+			</ul>
+		</div>
+		<ul class="utilMenu clearfix">
+			<li><a href="#">Sign in</a></li>
+			<li><a href="#">Register</a></li>
+		</ul>
+	</div>
 </body>
 </html>

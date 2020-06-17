@@ -10,35 +10,145 @@
 	<link rel="stylesheet" href="js/jquery.bxslider.js">
 
 	<style>
+		/*head*/
 		div.header{
 			width: 1210px;height: 110px;margin: 0 auto;
-			background-color:skyblue;
+			_background-color:skyblue;
 			position: relative;
+			margin-bottom: 20px;
 		}
 		div.header h1{
+			font-size: 45px;
 			width: 180px;line-height: 110px;
-			background-color:orange;
-			float: left;text-align: center;
+			_background-color:orange;
+			float: left;text-align: left;
 		}
-		div.header .gnbWrap>{
-			background-color:gray;
+		div.header .gnbWrap{
+			_background-color:gray;margin: 0px auto;
 			width: 570px;height: 110px;position: absolute;
-			right: 0;top: 0;
+			left: 170px;top: 0;
 		}
-		div.header .gnbWrap li{float: left;width:15%;}
+		div.header .gnbWrap li{float: left;width:25%;}
 		div.header .gnbWrap a{display: block;text-align: center;line-height: 110px;}
 
 		div.header .utilMenu{
 			width: 260px;height: 110px;
-			background-color:gray;position: absolute;
-			right: 0;top: 0;
+			_background-color:blue;position: absolute;
+			right: 0;top: 0;float: left;
 		}
 		div.header .utilMenu>li{float: left;width: 50%;}
 		div.header .utilMenu>li>a{display: block;text-align: center;line-height: 110px;}
+
+		div.header li:hover a{
+			display: block;
+			background-color:blue;color:white;
+			width: 150px;height: 50px;
+			text-align: center;line-height: 50px;
+			border: 1px none #000;border-radius:25px;
+		}
+		
+		/*slider*/
+		div.sliderWrap{
+			width: 1210px;height: 785px;
+			margin: 0 auto;position: relative;
+		}
+		div.sliderTxt{
+			width: 620px;height: 500px;
+			position: absolute;top: 170px;
+		}
+		div.sliderWrap h1{
+			font-size:45px;
+			margin-bottom: 15px;
+		}
+		div.sliderWrap p{
+			color:#666;
+			margin-bottom: 40px;
+		}
+		div.sliderWrap a.btn{
+			background-color:blue;color:white;
+			width: 150px;height: 50px;
+			display: block;text-align: center;line-height: 50px;
+			border: 1px none #000;border-radius:25px;
+		}
+		div.sliderWrap .imgWrap{
+			display: block;
+		}
+
+		/*footer*/
+		div.ftWrap{
+			height: 275px;
+			background-color: #f8f9ff;
+		}
+		div.ftWrap .footer{display: block;
+			width: 1210px;height: 275px;
+			margin: 0px auto;padding: 70px;
+		}
+		div.ftWrap h2{font-size:40px;text-align: center;margin-bottom: 30px;}
+		div.ftWrap p{text-align: center;color: #666;}
+
+		/*btnpage*/
+		div.btnPage{
+			width: 1210px;height: 935px;
+			margin: 0 auto;position: relative;
+		}
+		div.btnPage .btnImg{
+			width: 1210px;height: 935px;
+		}
+		div.btnPage .btnImg .btnOne{
+			position: absolute;right: 0;top: 180px;
+		}
+		div.btnPage .btnImg .btnTwo{
+			position: absolute;right: 285px;top: 225px;
+		}
+		div.btnPage .btnImg .btnThree{
+			position: absolute;right: 285px;top: 495px;
+		}
+		div.btnPage .btnImg .btnFour{
+			position: absolute;right: 41px;top: 495px;
+		}
+		div.btnPage .pgTxt{
+			width: 620px;height: 500px;
+			position: absolute;top: 285px;
+		}
+		div.btnPage .pgTxt h1{margin-bottom: 50px;}
+		div.btnPage .pgTxt p{margin-bottom: 60px;}
+		div.btnPage .pgTxt a.btn{
+			background-color:blue;color:white;
+			width: 150px;height: 50px;
+			display: block;text-align: center;line-height: 50px;
+			border: 1px none #000;border-radius:25px;
+		}
+		
+
+		/*sldWrap*/
+		div.sldWrap{background-color: #f8f9ff;}
+		div.sldWrap .sld{
+			width: 1210px;height: 806px;
+			margin: 0 auto;position: relative;
+		}
+		div.sldTxt{
+			width: 345px;height: 500px;
+			position: absolute;top: 265px;
+		}
+		div.sldWrap h1{
+			font-size:45px;
+			margin-bottom: 15px;
+		}
+		div.sldWrap p{
+			color:#666;
+			margin-bottom: 40px;
+		}
+		div.sldWrap .sld a.btn{
+			background-color:blue;color:white;
+			width: 150px;height: 50px;
+			display: block;text-align: center;line-height: 50px;
+			border: 1px none #000;border-radius:25px;
+		}
+
 	</style>
 <body>
 	<div class="header clearfix">
-		<h1 class="logo">chavy</h1>
+		<h1 class="logo"><a href="#">chavy</a></h1>
 		<div class="gnbWrap">
 			<ul class="gnbMenu clearfix">
 				<li><a href="#">Home</a></li>
@@ -48,9 +158,54 @@
 			</ul>
 		</div>
 		<ul class="utilMenu clearfix">
-			<li><a href="#">Sign in</a></li>
+			<li><a href="#">Sign in</a></li>	
 			<li><a href="#">Register</a></li>
 		</ul>
+	</div>
+
+	<div class="sliderWrap">
+		<div class="sliderTxt">
+			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, corrupti. Dolorem obcaecati dolore, veritatis nemo!</p>
+			<a href="#" class="btn">Request Demo</a>
+		</div>
+		<div class="imgWrap">
+			<img src="images/main_slider02.jpg" alt="">
+		</div>
+	</div>
+
+	<div class="ftWrap">
+		<div class="footer">
+			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, distinctio!</p>
+		</div>
+	</div>
+
+	<div class="btnPage">
+		<div class="pgTxt">
+			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, molestiae.</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ipsum sint odio laborum numquam, eos.</p>
+			<a href="#" class="btn">Request Demo</a>
+		</div>
+		<div class="btnImg">
+			<a href="#" class="btnOne"><img src="images/btn01.jpg" alt=""></a>
+			<a href="#" class="btnTwo"><img src="images/btn02.jpg" alt=""></a>
+			<a href="#" class="btnThree"><img src="images/btn03.jpg" alt=""></a>
+			<a href="#" class="btnFour"><img src="images/btn04.jpg" alt=""></a>
+		</div>
+	</div>
+
+	<div class="sldWrap">
+		<div class="sld">
+			<div class="sldTxt">
+				<h1>Lorem ipsum dolor sit amet.</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, corrupti. Dolorem obcaecati dolore!</p>
+				<a href="#" class="btn">Request Demo</a>
+			</div>
+			<div class="kindWrap">
+				<img src="images/main_slider03.jpg" alt="">
+			</div>
+		</div>
 	</div>
 </body>
 </html>

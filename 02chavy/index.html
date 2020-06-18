@@ -6,85 +6,78 @@
 	<title>chavy</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
-	<link rel="stylesheet" href="js/jquw180ery-3.1.1.min.js">
-	<link rel="stylesheet" href="js/jquery.bxslider.js">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 
 	<style>
 		/*head*/
-		div.header{
-			width: 1210px;height: 110px;margin: 0 auto;
-			_background-color:skyblue;
-			position: relative;
-			margin-bottom: 20px;
+		header{margin: 20px;}
+		header .boxWrap{
+			width: 1210px;height: 50px;margin: 0 auto;
+			/*background:skyblue;*/position: relative;
 		}
-		div.header h1{
-			font-size: 45px;
-			width: 180px;line-height: 110px;
-			_background-color:orange;
-			float: left;text-align: left;
+		header h1{
+			float: left;width: 136px;height: 50px;
+			display: block;/*font-size:50px;*/
 		}
-		div.header .gnbWrap{
-			_background-color:gray;margin: 0px auto;
-			width: 570px;height: 110px;position: absolute;
-			left: 170px;top: 0;
+		header h1 a{
+			text-align: center;width: 100px;
+			height: 50px;line-height: 50px;display: block;
 		}
-		div.header .gnbWrap li{float: left;width:25%;}
-		div.header .gnbWrap a{display: block;text-align: center;line-height: 110px;}
+		
+		/*header .menuWrap{}*/
+		header .menu{
+			width: 650px;height: 50px;position: absolute;
+			left: 170px;top: 0px;line-height: 50px;
+		}
+		header .menu li{float: left;width: 25%;text-align: center;}
+		header .menu a{display: block;margin: 0 auto;}
+		header .util{
+			width: 300px;position: absolute;
+			right: 0px;top: 0px;line-height: 50px;
+		}
+		header .util li{width: 50%;text-align: center;float: left;}
+		header .util a{display: block;margin: 0 auto;}
 
-		div.header .utilMenu{
-			width: 260px;height: 110px;
-			_background-color:blue;position: absolute;
-			right: 0;top: 0;float: left;
-		}
-		div.header .utilMenu>li{float: left;width: 50%;}
-		div.header .utilMenu>li>a{display: block;text-align: center;line-height: 110px;}
-
-		div.header li:hover a{
-			display: block;
-			background-color:blue;color:white;
-			width: 150px;height: 50px;
-			text-align: center;line-height: 50px;
-			border: 1px none #000;border-radius:25px;
+		header li a:hover{
+			background-color:#2c2c96;width: 150px;height: 50px;
+			display: block;text-align: center;
+			line-height: 50px;border: 1px none #000;
+			border-radius:25px;color:white;
 		}
 		
 		/*slider*/
-		div.sliderWrap{
-			width: 1210px;height: 785px;
-			margin: 0 auto;position: relative;
+		.visual{}
+		.visual .view{width: 1210px;position: relative;height: 605px;margin: 0 auto;}
+		.visual .slider img.img{position: absolute;left: 10%;}
+		.visual .slider li{overflow: hidden;}
+		.visual .visualTxt{position: absolute;top: 150px;width: 500px;}
+		.visual .visualTxt h3{font-size:2.5em;margin-bottom: 20px;}
+		.visual .visualTxt p{margin-bottom: 20px;}
+		.visual .visualTxt a{
+			display: block;width: 150px;height: 50px;
+			background:#2c2c96;color:white;border-radius:25px;
+			text-align: center;line-height: 50px;
 		}
-		div.sliderTxt{
-			width: 620px;height: 500px;
-			position: absolute;top: 170px;
-		}
-		div.sliderWrap h1{
-			font-size:45px;
-			margin-bottom: 15px;
-		}
-		div.sliderWrap p{
-			color:#666;
-			margin-bottom: 40px;
-		}
-		div.sliderWrap a.btn{
-			background-color:blue;color:white;
-			width: 150px;height: 50px;
-			display: block;text-align: center;line-height: 50px;
-			border: 1px none #000;border-radius:25px;
-		}
-		div.sliderWrap .imgWrap{
-			display: block;
+		.bx-wrapper {
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border: 0px none;
+		margin-bottom: 0;
 		}
 
-		/*footer*/
-		div.ftWrap{
+		/*midTxt*/
+		div.midWrap{
 			height: 275px;
 			background-color: #f8f9ff;
 		}
-		div.ftWrap .footer{display: block;
+		div.midWrap .midTxt{display: block;
 			width: 1210px;height: 275px;
 			margin: 0px auto;padding: 70px;
 		}
-		div.ftWrap h2{font-size:40px;text-align: center;margin-bottom: 30px;}
-		div.ftWrap p{text-align: center;color: #666;}
+		div.midWrap h2{font-size:40px;text-align: center;margin-bottom: 30px;}
+		div.midWrap p{text-align: center;color: #666;}
 
 		/*btnpage*/
 		div.btnPage{
@@ -110,10 +103,10 @@
 			width: 620px;height: 500px;
 			position: absolute;top: 285px;
 		}
-		div.btnPage .pgTxt h1{margin-bottom: 50px;}
-		div.btnPage .pgTxt p{margin-bottom: 60px;}
+		div.btnPage .pgTxt h1{margin-bottom: 30px;}
+		div.btnPage .pgTxt p{margin-bottom: 30px;}
 		div.btnPage .pgTxt a.btn{
-			background-color:blue;color:white;
+			background-color:#2c2c96;color:white;
 			width: 150px;height: 50px;
 			display: block;text-align: center;line-height: 50px;
 			border: 1px none #000;border-radius:25px;
@@ -139,43 +132,80 @@
 			margin-bottom: 40px;
 		}
 		div.sldWrap .sld a.btn{
-			background-color:blue;color:white;
+			background-color:#2c2c96;color:white;
 			width: 150px;height: 50px;
 			display: block;text-align: center;line-height: 50px;
 			border: 1px none #000;border-radius:25px;
 		}
 
 	</style>
+
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				controls:false,
+				pagerCustom:".bx-pager",
+			});
+		});
+
+	</script>
+
 <body>
-	<div class="header clearfix">
-		<h1 class="logo"><a href="#">chavy</a></h1>
-		<div class="gnbWrap">
-			<ul class="gnbMenu clearfix">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">How it Works</a></li>
-				<li><a href="#">Company</a></li>
-				<li><a href="#">Career</a></li>
-			</ul>
+	<header id="header">
+		<div class="boxWrap clearfix">
+			<h1><a href="#">chavy</a></h1>
+			<div class="menuWrap">
+				<ul class="menu clearfix">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">How it Works</a></li>
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Career</a></li>
+				</ul>
+				<ul class="util clearfix">
+					<li><a href="#">Sign in</a></li>
+					<li><a href="#">Register</a></li>
+				</ul>
+			</div>
 		</div>
-		<ul class="utilMenu clearfix">
-			<li><a href="#">Sign in</a></li>	
-			<li><a href="#">Register</a></li>
+	</header>
+
+	<div class="visual">
+		<ul class="slider">  
+			<li>  <!-- w100% -->
+				<div class="view">
+					<img src="images/main_slider02.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nulla.</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li>  <!-- w100% -->
+				<div class="view">
+					<img src="images/main_slider02.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nulla.</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li>  <!-- w100% -->
+				<div class="view">
+					<img src="images/main_slider02.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.3</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nulla.</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 
-	<div class="sliderWrap">
-		<div class="sliderTxt">
-			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, corrupti. Dolorem obcaecati dolore, veritatis nemo!</p>
-			<a href="#" class="btn">Request Demo</a>
-		</div>
-		<div class="imgWrap">
-			<img src="images/main_slider02.jpg" alt="">
-		</div>
-	</div>
-
-	<div class="ftWrap">
-		<div class="footer">
+	<div class="midWrap">
+		<div class="midTxt">
 			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, distinctio!</p>
 		</div>
@@ -207,5 +237,7 @@
 			</div>
 		</div>
 	</div>
+
+
 </body>
 </html>

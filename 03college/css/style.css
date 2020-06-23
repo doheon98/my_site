@@ -1,7 +1,16 @@
 @charset "utf-8";
 /*header*/
-
 header#header{height: 160px;}
+header#header .topHdWrap{
+	margin: 0 auto;height: 40px;
+	background: #0044af;
+}
+header#header .topHead{width: 1200px;margin: 0 auto;}
+header#header .topNav{width: 365px;float: left;line-height: 40px;}
+header#header .topNav li{float: left;width: 33.33%;text-align: center;}
+header#header .subMenu{_width: 290px;float: right;line-height: 40px;}
+header#header .subMenu li{float: left;}
+
 
 /*contents*/
 #contents{
@@ -27,7 +36,6 @@ header#header{height: 160px;}
 #contents .container li:nth-child(7){background: orange;}
 #contents .container li:nth-child(8){background: aqua;width: 75%;}
 
+
 /*footer*/
-footer#footer{
-	height: 200px;
-}
+footer#footer{height: 200px;}

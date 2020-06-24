@@ -3,14 +3,29 @@
 header#header{height: 160px;}
 header#header .topHdWrap{
 	margin: 0 auto;height: 40px;
-	background: #0044af;
+	background: #0044af;display: block;
 }
 header#header .topHead{width: 1200px;margin: 0 auto;}
 header#header .topNav{width: 365px;float: left;line-height: 40px;}
-header#header .topNav li{float: left;width: 33.33%;text-align: center;}
+header#header .topNav li{
+	float: left;width: 33.33%;text-align: center;
+	background: #00163b; color:#fff;
+	border-right: 2px solid #0044af;
+}
+header#header .topNav li a{color:white;display: block;}
+header#header .topNav li:hover a{background: #fff;color:black;}
 header#header .subMenu{_width: 290px;float: right;line-height: 40px;}
 header#header .subMenu li{float: left;}
 
+header#header .hdWrap{
+	width: 1200px;margin: 0 auto;
+}
+header#header .logo{width: 210px;margin: 25px 0;cursor:pointer;}
+header#header .mainMenu{float: right;width: 735px;}
+header#header .mainMenu .menuWrap{width: 590px;float: left;line-height: 120px;}
+header#header .mainMenu .menuWrap li{float: left;width: 20%;}
+header#header .btnUtil{float: right;line-height: 120px;}
+header#header .btnUtil li{float: left;}
 
 /*contents*/
 #contents{
@@ -22,8 +37,14 @@ header#header .subMenu li{float: left;}
 }
 #contents .title{
 	width: 1200px; height: 260px;
-	background:gray; margin: auto;
+	_background:gray; margin: auto;padding: 80px 0 0 0;
 }
+#contents .titleTxtBox{float: left;width: 685px;height: 135px;}
+#contents .titleTxtBox p{font-size: 44px;color: white;}
+#contents .titleTxtBox h2{font-size: 60px;color: white;}
+#contents .titleBtn{float: right;width: 425px;}
+#contents .titleBtn li{float: left;width: 25%;text-align: center;color:white;}
+
 #contents .container{width: 1200px;margin: auto;}
 #contents .container li{float: left;width: 25%;height: 225px;}
 

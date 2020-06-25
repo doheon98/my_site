@@ -46,7 +46,10 @@ header#header .btnUtil li{float: left;}
 #contents .titleBtn li{float: left;width: 25%;text-align: center;color:white;}
 
 #contents .container{width: 1200px;margin: auto;}
-#contents .container li{float: left;width: 25%;height: 225px;}
+#contents .container li{
+	float: left;width: 25%;height: 225px;
+	overflow: hidden;
+}
 
 #contents .container li:nth-child(1){background: #f00;width: 75%;height: 450px;}
 #contents .container li:nth-child(2){background: #ff0;height: 450px;}
@@ -57,6 +60,20 @@ header#header .btnUtil li{float: left;}
 #contents .container li:nth-child(7){background: orange;}
 #contents .container li:nth-child(8){background: aqua;width: 75%;}
 
+#contents .container .viewOne{position: relative;}
+#contents .container .viewOne img{position: absolute;top: -255px;right: -150px;}
+#contents .container .viewOneTxt{
+	width: 300px;height: 215px;
+	position: absolute;top: 90px;left: 80px;
+}
+#contents .container .viewOneTxt h3{font-size: 60px;color:#1551b7;}
+#contents .container .viewOneTxt a{
+	display: block;width: 170px;height: 40px;
+	background: #182d4c;color:white;text-align: center;
+	line-height: 40px;
+}
 
 /*footer*/
 footer#footer{height: 200px;}
+
+

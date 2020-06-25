@@ -7,6 +7,16 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<script>
+		$(document).ready(function(){
+			$(".sliderOne").bxSlider({
+				controls:false,
+				pagerCustom:".bx-pager",
+			});
+		});
+	</script>
+
 </head>
 <body>
 
@@ -64,9 +74,18 @@
 				</ul>
 			</div>
 		</section>
+
 		<div class="container">
-			<ul class="clearfix">
-				<li>01</li>
+			<ul class="sliderOne clearfix">
+				<li>
+					<div class="viewOne">
+						<img src="images/bg02.jpg" alt="img">
+						<div class="viewOneTxt">
+							<h3>한국에서 시작하는 새로운 꿈</h3>
+							<a href="#">자세히보기</a>
+						</div>
+					</div>
+				</li>
 				<li>02</li>
 				<li>03</li>
 				<li>04</li>

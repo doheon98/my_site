@@ -61,16 +61,37 @@ header#header .btnUtil li{float: left;}
 #contents .container li:nth-child(8){background: aqua;width: 75%;}
 
 #contents .container .viewOne{position: relative;}
-#contents .container .viewOne img{position: absolute;top: -255px;right: -150px;}
+#contents .container .viewOne img{position: absolute;top: -255px;right: -130px;}
 #contents .container .viewOneTxt{
-	width: 300px;height: 215px;
+	width: 270px;
 	position: absolute;top: 90px;left: 80px;
 }
-#contents .container .viewOneTxt h3{font-size: 60px;color:#1551b7;}
+#contents .container .viewOneTxt h2{
+	font-size: 55px;color:#1551b7;margin-bottom: 30px;	
+}
 #contents .container .viewOneTxt a{
 	display: block;width: 170px;height: 40px;
 	background: #182d4c;color:white;text-align: center;
 	line-height: 40px;
+}
+#contents .container .viewTwo{position: relative;}
+#contents .container .viewTwo img{
+	position: absolute;right: -235px;top: -50px;
+}
+#contents .container .cover{
+	width: 300px;height: 450px;
+	position: absolute;background-color:rgba(91,73,24,0.5);
+}
+#contents .container .viewTwoTxt{
+	width: 225px;position: absolute;top: 80px;left: 40px;
+	color:#fff;
+}
+#contents .container .viewTwoTxt h2{font-size:33px;margin-bottom: 30px;}
+#contents .container .viewTwoTxt p{margin-bottom: 30px;}
+#contents .container .viewTwoTxt a{
+	display: block;width: 170px;height: 40px;
+	border: 1px solid #fff;color:white;background-color: rgba(0,0,0,0.5);
+	text-align: center;line-height: 40px;
 }
 
 /*footer*/

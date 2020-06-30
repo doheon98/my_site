@@ -12,8 +12,19 @@
 
 	<script>
 		$(document).ready(function(){
-			$(".vSlider").bxSlider({pager:false});
-			// $(".bSlider").bxSlider();
+			$(".vSlider").bxSlider({
+				pager:false,
+				auto:true,
+			});
+			$(".bSlider").bxSlider({
+				pager:false,
+				controls:false,
+				auto:true,
+			});
+			$(".botSlider").bxSlider({
+				controls:false,
+				pager:false,
+			});
 		});
 	</script>
 </head>
@@ -134,13 +145,85 @@
 					</div>
 
 				</li>
-				<li>06</li>
+				<li>   <!-- list06 -->
+					<div class="campusBox">
+						<img src="images/campus02.jpg" alt="">
+						<div class="campusOver">
+							<div class="campusTxt">
+								캠퍼스 투어<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, explicabo!
+							</div>
+						</div>
+					</div>
+				</li>
 				<li>07</li>
-				<li>08</li>
+				<li class="sliderTwo">   <!-- list08 -->
+					<div>
+						<ul class="bSlider">
+							<li>
+								<img src="images/student.png" alt="">
+								<div class="bSliderTxt">
+									<p>2017년 신편입생 2차 모집</p>
+									<h2>2017.7.1 ~ 7.10</h2>
+									<a href="#">입학사전예약</a>
+								</div>
+							</li>
+							<li>
+								<img src="images/student.png" alt="">
+								<div class="bSliderTxt">
+									<p>2017년 신편입생 2차 모집</p>
+									<h2>2017.7.1 ~ 7.10</h2>
+									<a href="#">입학사전예약</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
 			</ul>
 		</div>
-	</div>
 
-	<footer id="footer"></footer>
+		<div class="botWrap clearfix">
+			<ul class="botTxt">
+				<li class="clearfix">
+					<h3>학사일정</h3>
+					<p>< 2016 07 ></p>
+				</li>
+			</ul>
+			<ul class="botSliderBox">
+				<li>
+					<ul class="botSlider clearfix">
+						<li class="clearfix">
+							<h4>2016-1학기 성적 열람 및 상담 신청</h4>
+							<p>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p>
+						</li>
+						<li class="clearfix">
+							<h4>2016-1학기 성적 열람 및 상담 신청</h4>
+							<p>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p>
+						</li>
+						<li class="clearfix">
+							<h4>2016-1학기 성적 열람 및 상담 신청</h4>
+							<p>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>	
+
+	<footer id="footer">
+		<div class="ftTxtWrap">    <!-- 100$ -->
+			<div class="ftTxtBox">   <!-- 1200 -->
+				<ul class="clearfix">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">한국 대학교</a></li>
+					<li><a href="#">개인벙보취급방침</a></li>
+					<li><a href="#">이용정책</a></li>
+					<li><a href="#">입점/제휴문의 및 광고</a></li>
+					<li><a href="#">이메일 무단수집거부</a></li>
+				</ul>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Architecto voluptatum, aliquam iste asperiores magnam maiores.<br> Eos minus aliquid, maiores alias, doloremque error quo, <br>sed, nam odit cupiditate ratione explicabo. Facilis.</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

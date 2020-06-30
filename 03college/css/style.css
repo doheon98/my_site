@@ -66,6 +66,7 @@ header#header .btnToggle .my{background-position: -45px 0;}
 #contents .titleBtn li a{color:white;text-align: center;display: block;}
 
 #contents .container{width: 1200px;margin: auto;}
+#contents .container>ul{margin-bottom: 20px;}
 #contents .container>ul>li{
 	float: left;width: 25%;height: 225px;
 	overflow: hidden;
@@ -102,7 +103,7 @@ header#header .btnToggle .my{background-position: -45px 0;}
     margin-bottom:0;
 }
 
-.bx-wrapper .bx-controls-direction a {
+/*.bx-wrapper .bx-controls-direction a {
     position: absolute;
     top: 50%;
     margin-top: -35px;
@@ -119,7 +120,7 @@ header#header .btnToggle .my{background-position: -45px 0;}
 .bx-wrapper .bx-next {
     right: 0;
     background: url(../images/ctrl_01.png) no-repeat -55px 0;
-}
+}*/
 
 /*li02*/
 #contents .container .viewTwo{position: relative;}
@@ -161,7 +162,95 @@ header#header .btnToggle .my{background-position: -45px 0;}
 #contents .snsImgWrap p{font-size: 12px;float: right;width: 120px;color:#4c4c4c;}
 #contents .snsLogoWrap{float: right;}
 
+/*li06*/
+#contents .campusBox{
+	width: 300px;height: 225px;
+	position: relative;overflow: hidden;
+}
+#contents .campusBox img{
+	display: block;position: absolute;
+	top: -50px;right: -100px;
+}
+#contents .campusBox .campusOver{
+	width: 300px;height: 225px;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 300px;transition:0.2s;
+	color:white;top: 175px;
+
+}
+#contents .campusBox:hover .campusOver{left: 0;top: 0;}
+#contents .campusBox .campusTxt{
+	text-align: center;padding-top: 13px;
+	padding-left: 20px;padding-right: 20px;
+}
+
+/*li08*/
+#contents .bSlider{
+	position: absolute;width: 900px;height: 225px;
+}
+#contents .bSlider img{}
+#contents .bSlider .bSliderTxt{
+	position: absolute;left: 35px;top: 40px;
+	color:#fd503f;
+}
+#contents .bSlider .bSliderTxt p{font-size:23px;}
+#contents .bSlider .bSliderTxt h2{font-size:40px;margin-bottom: 18px;}
+#contents .bSlider .bSliderTxt a{
+	display: block;width: 160px;line-height:40px;
+	font-size:initial;text-align: center;
+	_border: 1px solid #000;background-color: rgba(253,80,63,0.8);
+	color:white;
+}
+
+
+#contents .botWrap{
+	background: white;width: 1200px;height: 60px;margin: 0 auto;
+}
+#contents .botWrap>ul.botTxt{
+	width: 300px;float: left;text-align: center;line-height: 60px;
+	border-right: 1.5px solid #666;
+}
+#contents .botWrap .botTxt li{
+	padding: 0px 40px;color:#666;
+}
+#contents .botWrap>ul.botTxt>li>h3{float: left;}
+#contents .botWrap>ul.botTxt>li>p{float: right;}
+
+/*#contents .botSliderBox{width: 900px;float: right;}
+#contents .botSliderBox .botSt{width: 300px;float: left;}
+#contents .botSliderBox .botSt p{text-align: center;line-height: 60px;}
+#contents .botSliderBox .botSlider{width: 600px;float: right;}*/
+
+#contents .botSliderBox{float: right;width: 900px;height: 60px;}
+#contents .botSlider li{
+	text-align: center;line-height: 60px;color:#666;
+	padding: 0 0px;
+}
+#contents .botSlider li>h4{float: left;width: 300px;display: block;}
+#contents .botSlider li>p{
+	float: right;font-size:;font-size: 14px;width: 600px;
+	text-align: left;padding: 0 20px;
+}
+
+
 /*footer*/
 footer#footer{height: 200px;}
 
+footer#footer .ftTxtBox{
+	width: 1200px;margin: 0 auto;position: relative;
+	padding-left: 300px;overflow: hidden;
+}
+
+footer#footer ul{}
+footer#footer li{float: left;position: relative;}
+footer#footer li:after{
+	content:"";display: block;width: 1px;height: 16px;
+	background-color:#666;position: absolute;top: 23px; left: -1px;
+}
+footer#footer li a{
+	color:#666;font-size: 12px;text-align: center;
+	line-height: 60px;display: block;padding:0 15px;
+}
+footer#footer li:first-child a{padding-left: 0;}
 

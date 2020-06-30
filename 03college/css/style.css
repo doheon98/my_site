@@ -154,12 +154,36 @@ header#header .btnToggle .my{background-position: -45px 0;}
 #contents .hotBtnWrap li a{color:white;font-size:13px;display: block;}
 #contents .hotBtnWrap li a img{padding-bottom: 10px;}
 
+/*li04*/
+
+#contents .infoWrap{position: relative;}
+#contents .infoWrap img{}
+#contents .infoWrap h2{
+	position: absolute;top: 30px;left: 20px;
+	color:white;font-size:22px;
+}
+#contents .infoWrap .infoLine{
+	width: 260px;height: 1px;background: #fff;
+	position: absolute;top: 75px;left: 20px;
+}
+#contents .infoWrap ul{
+	position: absolute;top: 95px;left: 20px;
+	font-size:14px;color: white;
+}
+#contents .infoWrap ul>li{}
+#contents .infoWrap ul>li>p{
+	float: left;padding-right: 26px;padding-bottom: 10px;
+	cursor: pointer;
+}
+
 /*li05*/
 #contents .snsWrap{padding: 30px 20px 0 20px;}
 #contents h2.snsTxt{color:#01173e;margin-bottom: 17px;font-size: 22px;}
 #contents .snsImgWrap{margin-bottom: 20px;}
 #contents .snsImgWrap img{float: left;}
-#contents .snsImgWrap p{font-size: 12px;float: right;width: 120px;color:#4c4c4c;}
+#contents .snsImgWrap p{
+	font-size: 12px;float: right;width: 120px;color:#4c4c4c;
+}
 #contents .snsLogoWrap{float: right;}
 
 /*li06*/
@@ -184,6 +208,18 @@ header#header .btnToggle .my{background-position: -45px 0;}
 	text-align: center;padding-top: 13px;
 	padding-left: 20px;padding-right: 20px;
 }
+
+/*li07*/
+
+#contents .movieWrap{position:relative;}
+#contents .movieImg img{position: absolute;top: -100px;right: 0;}
+#contents .movieImg .imgCover{
+	position: absolute;top: 0;left: 0;width: 300px;height: 225px;
+	background-color:rgba(65,94,255,0.6);
+}
+#contents .movieBtn{position: absolute;top: 88px;left: 120px;}
+#contents .movieBtn{}
+
 
 /*li08*/
 #contents .bSlider{
@@ -253,4 +289,5 @@ footer#footer li a{
 	line-height: 60px;display: block;padding:0 15px;
 }
 footer#footer li:first-child a{padding-left: 0;}
+footer#footer{color:#666;font-size:15px;}
 

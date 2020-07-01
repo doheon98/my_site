@@ -172,7 +172,7 @@ header#header .btnToggle .my{background-position: -45px 0;}
 }
 #contents .infoWrap ul>li{}
 #contents .infoWrap ul>li>p{
-	float: left;padding-right: 26px;padding-bottom: 10px;
+	float: left;display: block;padding-right: 26px;padding-bottom: 10px;
 	cursor: pointer;
 }
 
@@ -275,18 +275,18 @@ footer#footer{height: 200px;}
 
 footer#footer .ftTxtBox{
 	width: 1200px;margin: 0 auto;position: relative;
-	padding-left: 300px;overflow: hidden;
+	left: 300px;overflow: hidden;padding: 30px 0;
 }
 
 footer#footer ul{}
-footer#footer li{float: left;position: relative;}
+footer#footer li{float: left;position: relative;margin-bottom: 15px;}
 footer#footer li:after{
 	content:"";display: block;width: 1px;height: 16px;
-	background-color:#666;position: absolute;top: 23px; left: -1px;
+	background-color:#666;position: absolute;top: 8px; left: -1px;
 }
 footer#footer li a{
-	color:#666;font-size: 12px;text-align: center;
-	line-height: 60px;display: block;padding:0 15px;
+	display: block;text-align: center;line-height: 30px;
+	padding:0 15px;color:#666;font-size: 12px;
 }
 footer#footer li:first-child a{padding-left: 0;}
 footer#footer{color:#666;font-size:15px;}

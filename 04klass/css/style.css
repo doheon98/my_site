@@ -74,29 +74,40 @@ div#contents .visual .visualTxt a{
 	float: left;width: 380px;
 	margin-right: 30px;box-shadow:  0 0 10px #f9f8fd;}
 #cardSecWrap .cardTab ul li:last-child{margin-right: 0px;}
-#cardSecWrap .cardTab .imgTxt{padding: 40px 25px;}
-#cardSecWrap .cardTab .imgTxt h3{margin-bottom: 10px;}
-#cardSecWrap .cardTab .imgTxt p{display: block;margin-bottom: 10px;}
-#cardSecWrap .cardTab .imgTxt a{}
 
-/*photo1*/
+#cardSecWrap .cardTab .imgTxt{padding: 40px 25px;}
+#cardSecWrap .cardTab .imgTxt h3{_margin-bottom: 10px;}
+#cardSecWrap .cardTab .price{width: 330px;padding: 20px 0;}
+#cardSecWrap .cardTab .imgTxt p{display: block;margin-bottom: 10px;}
+#cardSecWrap .cardTab .imgTxt .left{float: left;height: 29px;line-height: 29px;}
+#cardSecWrap .cardTab .imgTxt .right{
+	float: right;color:orange;
+	font-size:22px;font-weight:bold;
+}
+#cardSecWrap .cardTab .imgTxt a{
+	display: block;color:#464ca0;font-weight:bold;
+}
+
+/*photo*/
 
 #photoWrap{width: 1200px;margin: 0 auto;}
 #photoWrap .photoOne{}
 #photoWrap .photoOne img{margin-right: 65px;margin-bottom: 145px;}
 #photoWrap .photoOne .txtOne{float: right;width: 680px;padding: 80px 0;}
-#photoWrap .photoOne .txtOne p{font-size: 25px;margin-bottom: 50px;}
-#photoWrap .photoOne .txtOne h2{
+#photoWrap .photoOne .txtOne>p{font-size: 25px;margin-bottom: 50px;}
+#photoWrap .photoOne .nameWrap{
 	padding-left: 30px;border-left: 5px solid #464ca0;padding-bottom: 10px;
 }
+#photoWrap .photoOne .nameWrap>p{color:#666;}
 
 #photoWrap .photoTwo{}
 #photoWrap .photoTwo img{float: right;margin-left: 65px;margin-bottom: 145px;}
 #photoWrap .photoTwo .txtTwo{float: left;width: 680px;padding: 80px 0;}
-#photoWrap .photoTwo .txtTwo p{font-size: 25px;margin-bottom: 50px;}
-#photoWrap .photoTwo .txtTwo h2{
+#photoWrap .photoTwo .txtTwo>p{font-size: 25px;margin-bottom: 50px;}
+#photoWrap .photoTwo .nameWrap{
 	padding-left: 30px;border-left: 5px solid #464ca0;padding-bottom: 10px;
 }
+#photoWrap .photoTwo .nameWrap>p{color:#666;}
 
 #photoWrap .photoThree{}
 #photoWrap .photoThree img{float: left;margin-right: 65px;margin-bottom: 145px;}
@@ -111,7 +122,7 @@ div#contents .visual .visualTxt a{
 
 /*info*/
 
-#infoWrap{width: 1200px;margin: 0 auto;}
+#infoWrap{width: 1200px;margin: 0 auto;margin-bottom: 150px;}
 #infoWrap h2{text-align: center;font-size:2.5em;margin-bottom: 85px;}
 #infoWrap ul{}
 #infoWrap ul li{
@@ -125,4 +136,5 @@ div#contents .visual .visualTxt a{
 
 /*footer*/
 
-.ftWrap{width: 1200px;margin: 0 auto;}
+.ftLine{width: 1500px;height: 1px;margin: 50px auto;background: #ddd;}
+.ftWrap{width: 1200px;margin: 0 auto;margin-bottom: 150px;}

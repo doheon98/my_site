@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*header*/
+
+#header{border-bottom: 5px solid #0e73a7;}
+	.headerWrap{width: 980px;margin: 0 auto;}
+		.utilWrap{background: #0e73a7;}
+
+		.navWrap{}
+		.navWrap>ul{}
+		.navWrap>ul>li{
+			float: left;width:16.66%;border-right: 1px solid #ececec;
+
+		}
+		.navWrap>ul>li:first-child{border-left: 1px solid #ececec;}
+		.navWrap>ul>li:hover a{background: #0e73a7;color:white;}
+		.navWrap>ul>li>a{
+			display: block;text-align: center;line-height: 60px;
+			color:#162731;font-size:18px;font-weight:bold;
+		}
+
+/*content*/
+
+#content{
+	height: 1125px;
+	background-image:  url(../images/dot01.gif) ,url(../images/01배경.jpg);
+	background-repeat: repeat, no-repeat;
+	background-position: center;
+	background-size: auto, cover;
+}
+	.conWrap{
+		width: 980px;height: 1070px;margin: 0 auto;background: gray;padding-top: 55px;
+	}
+		.main_content{width: 980px;height: 555px;background: skyblue;}
+		.main_content>ul{position: relative;}
+
+		.main_content>ul>li.l_con{}
+
+		.main_content>ul>li.r_con{
+			width: 482px;height: 555px;position: absolute;right: 0;
+		}
+		.main_content>ul>li.r_con>.rTxt{
+			position: absolute;left: 25px;top: 35px;
+			color:#142630;
+		}
+		.main_content>ul>li.r_con>.rTxt>h2{font-size:50px;margin-bottom: 20px;}
+		.main_content>ul>li.r_con>.rTxt>p{font-size:20px;}

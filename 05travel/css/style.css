@@ -22,26 +22,61 @@
 /*content*/
 
 #content{
-	height: 1125px;
+	_height: 1125px;padding-top: 55px;
 	background-image:  url(../images/dot01.gif) ,url(../images/01배경.jpg);
 	background-repeat: repeat, no-repeat;
 	background-position: center;
 	background-size: auto, cover;
 }
 	.conWrap{
-		width: 980px;height: 1070px;margin: 0 auto;background: gray;padding-top: 55px;
+		width: 980px;_height: 1070px;margin: 0 auto;background: gray;
 	}
-		.main_content{width: 980px;height: 555px;background: skyblue;}
-		.main_content>ul{position: relative;}
+		.main_content{width: 980px;height: 555px;background: skyblue;margin-bottom: 15px;}
+			.main_content>ul{position: relative;}
 
-		.main_content>ul>li.l_con{}
+			.main_content>ul>li.l_con{}
 
-		.main_content>ul>li.r_con{
-			width: 482px;height: 555px;position: absolute;right: 0;
+			.main_content>ul>li.r_con{
+				width: 482px;height: 555px;position: absolute;right: 0;
+			}
+			.main_content>ul>li.r_con>.rTxt{
+				position: absolute;left: 25px;top: 35px;
+				color:#142630;
+			}
+			.main_content>ul>li.r_con>.rTxt>h2{font-size:50px;margin-bottom: 20px;}
+			.main_content>ul>li.r_con>.rTxt>p{font-size:20px;}
+
+		.sub_content{}
+		.sub_content>ul{}
+		.sub_content>ul>li{
+			float: left;width: 233px;height: 240px;
+			margin-right: 16px;margin-bottom: 15px;
 		}
-		.main_content>ul>li.r_con>.rTxt{
-			position: absolute;left: 25px;top: 35px;
-			color:#142630;
+		.sub_content>ul>li:nth-child(1){}
+		.sub_content>ul>li:nth-child(2){}
+		.sub_content>ul>li:nth-child(3){}
+		.sub_content>ul>li:nth-child(4){margin-right: 0;}
+		.sub_content>ul>li:nth-child(5){}
+		.sub_content>ul>li:nth-child(6){}
+		.sub_content>ul>li:nth-child(7){}
+		.sub_content>ul>li:nth-child(8){margin-right: 0;}
+
+
+		/*li03*/
+		.weather{position: absolute;overflow:hidden;}
+		.weather>img{width: 100%;transition:0.3s;}
+		.weather>.wTxt{
+			width: 100%;height: 216px;background:rgba(0,0,0,0.5);
+			position: absolute;left: 0;top: 170px;padding: 5px 15px;
 		}
-		.main_content>ul>li.r_con>.rTxt>h2{font-size:50px;margin-bottom: 20px;}
-		.main_content>ul>li.r_con>.rTxt>p{font-size:20px;}
+		.weather>.wTxt>h3{color: white;font-size: 16px;}
+		.weather>.wTxt>p{color: white;font-size: 12px;}
+
+		.weather:hover .wTxt{top: 0;}
+		.weather:hover .wTxt{top: 0;}
+
+
+/*footer*/
+
+#footer
+	.ftWrap{width: 980px;height: 115px;margin: 0 auto;background: #fff;}

@@ -9,6 +9,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="jquery-3.1.1.min.js"></script>
 	<script src="jquery.bxslider.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".viewslider").bxSlider();
+		});
+	</script>
 </head>
 <body>
 	<header id="header">
@@ -37,7 +43,22 @@
 				<li class="main_content">
 					<ul>
 						<li class="l_con">
-							
+							<ul>
+								<li class="l_left">
+									<img src="images/03여행01.jpg" alt="">
+									<div class="txtOne clearfix">
+										<h3>프랑스</h3>
+										<p>￦ 1,900,000~</p>
+									</div>
+								</li>
+								<li class="l_right">
+									<img src="images/03여행02.jpg" alt="">
+									<div class="txtTwo clearfix">
+										<h3>일본</h3>
+										<p>￦ 890,000~</p>
+									</div>
+								</li>
+							</ul>
 						</li>
 						<li class="r_con">
 							<div class="rTxt">
@@ -47,20 +68,31 @@
 						</li>
 					</ul>
 				</li>
+
 				<li class="sub_content">
 					<ul class="clearfix">
-						<li>01</li>
+						<li class="l_slider"> <!-- li01 -->
+							<ul class="viewslider">
+								<li>
+									<img src="images/03여행03.jpg" alt="">
+								</li>
+								<li>
+									<img src="images/03여행03.jpg" alt="">
+								</li>
+							</ul>
+						</li>
 						<li>02</li>
 						<li> <!-- li03 -->
 							<div class="weather">
 								<img src="images/03여행05.jpg" alt="">
 								<div class="wTxt">
 									<h3>20℃ 구름조금</h3>
-									<p>습도 60% 바람 남남동㎧</p>
+									<p>습도 60% 바람 남남동m/s</p>
 								</div>
 							</div>
 						</li>
-						<li>04</li>
+						<li> <!-- li04 -->
+						</li>
 						<li>05</li>
 						<li>06</li>
 						<li>07</li>
@@ -73,6 +105,17 @@
 
 	<footer id="footer">
 		<div class="ftWrap">
+			<ul class="clearfix">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">광고 및 제휴문의</a></li>
+			</ul>
+			<address>
+				123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호:123-45-678910 대표이사:홍길동 대표번호:02-1324-5678<br>
+				COPYRIGHTⓒ2014 HIMEDIA TOUR. ALL RIGHTS RESERVED.
+			</address>
 			
 		</div>
 	</footer>

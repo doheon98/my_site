@@ -5,14 +5,19 @@
 	<meta charset="UTF-8">
 	<title>travel</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="jquery.bxslider.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="jquery-3.1.1.min.js"></script>
-	<script src="jquery.bxslider.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 
 	<script>
 		$(document).ready(function(){
-			$(".viewslider").bxSlider();
+			$(".viewslider").bxSlider({
+				pagerCustom:".bx-pager"
+			});
+			$(".viewslider01").bxSlider({
+				pagerCustom:".bx-pager"
+			});
 		});
 	</script>
 </head>
@@ -75,13 +80,38 @@
 							<ul class="viewslider">
 								<li>
 									<img src="images/03여행03.jpg" alt="">
+									<div class="l_sliderTxt">
+										<h4>HILLTON HOTEL (PARIS)</h4>
+										<p><font style="color:yellow">★★★</font>★★</p>
+									</div>
 								</li>
 								<li>
 									<img src="images/03여행03.jpg" alt="">
+									<div class="l_sliderTxt">
+										<h4>HILLTON HOTEL (PARIS)</h4>
+										<p><font style="color:yellow">★★★</font>★★</p>
+									</div>
 								</li>
 							</ul>
 						</li>
-						<li>02</li>
+						<li><!-- li02 -->
+							<ul class="viewslider01">
+								<li>
+									<img src="images/03여행04.jpg" alt="">
+									<div class="r_sliderTxt">
+										<h4>관광명소 (디즈니랜드)</h4>
+										<p><font style="color:yellow">★★★</font>★★</p>
+									</div>
+								</li>
+								<li>
+									<img src="images/03여행04.jpg" alt="">
+									<div class="r_sliderTxt">
+										<h4>관광명소 (디즈니랜드)</h4>
+										<p><font style="color:yellow">★★★</font>★★</p>
+									</div>
+								</li>
+							</ul>
+						</li>
 						<li> <!-- li03 -->
 							<div class="weather">
 								<img src="images/03여행05.jpg" alt="">
@@ -92,6 +122,13 @@
 							</div>
 						</li>
 						<li> <!-- li04 -->
+							<div class="wrap04">
+								<img src="images/03여행06.jpg" alt="">
+								<div class="wrap04Txt">
+									<h4>"해외여행은 처음이었는데, 하이미디어여행 덕분에 무사히 다녀올 수 있었어요."</h4>
+									<p>프랑스 파리 자유여행</p>
+								</div>
+							</div>
 						</li>
 						<li>05</li>
 						<li>06</li>

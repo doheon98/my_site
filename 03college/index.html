@@ -6,9 +6,11 @@
 	<title>college</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="JS/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 
 	<script>
 		$(document).ready(function(){
@@ -24,6 +26,11 @@
 			$(".botSlider").bxSlider({
 				controls:false,
 				pager:false,
+			});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:600,
+				innerHeight:337,
 			});
 		});
 	</script>
@@ -181,7 +188,10 @@
 					</div>
 				</li>
 				<li>   <!-- list07 -->
-					<div class="movieWrap">
+					<a href="https://www.youtube.com/embed/-vXTTaHr44w" class="youtube" title="한국대학교">
+						<img src="images/campus03.jpg" alt="">
+					</a>					
+					<!-- <div class="movieWrap">
 						<div class="movieImg">
 							<img src="images/campus03.jpg" alt="">
 							<div class="imgCover"></div>
@@ -189,7 +199,7 @@
 						<div class="movieBtn">
 							<img src="images/control_01.png" alt="">
 						</div>
-					</div>
+					</div> -->
 				</li>
 				<li class="sliderTwo">   <!-- list08 -->
 					<div>

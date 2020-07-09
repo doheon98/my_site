@@ -18,7 +18,6 @@
 			border-radius:15px;
 			text-indent: 80px;
 			font-size: 13px;font-weight: bold;
-			background-color: #fff;
 		}
 		.utilWrap .searchBtn{
 			width: 20px;height: 20px;
@@ -39,7 +38,7 @@
 		}
 		.numWrap .num{float: left;margin-right: 20px;}
 		.numWrap .snslogo{float: right;padding-top: 5px;}
-		.numWrap .snslogo img{width: 24px;cursor:pointer;}
+		.numWrap .snslogo img{cursor:pointer;}
 
 
 		.navWrap{}
@@ -80,12 +79,82 @@
 				width: 482px;height: 556px;_background: red;
 				position: absolute;z-index: 1;
 			}
+			
+			#main_aside{width: 482px;height: 300px;background: white;}
+			#main_aside .buttons>label{
+				display: block;width: 132px;height: 25%;line-height: 75px;
+				text-align: center;cursor: pointer;background-color: #0099cb;
+				color:white;font-weight:bold;
+			}
+			#main_aside .buttons>label:nth-child(1),
+			#main_aside .buttons>label:nth-child(2){background: #006599;}
+
+			.inp:nth-child(1):checked ~ div.buttons > label:nth-child(1),
+			.inp:nth-child(2):checked ~ div.buttons > label:nth-child(2),
+			.inp:nth-child(3):checked ~ div.buttons > label:nth-child(3),
+			.inp:nth-child(4):checked ~ div.buttons > label:nth-child(4){
+				color:#111 !important;background-color: #fff !important;
+			}
+
+			.inp:nth-child(1),
+			.inp:nth-child(2),
+			.inp:nth-child(3),
+			.inp:nth-child(4){display: none;}
+			.inp:nth-child(1):checked ~ div.tab_items1{display: block;}
+			.inp:nth-child(1) ~ div.tab_items1{display: none;}
+
+			
+			.tab_items1{
+				width: 350px;position: absolute;right: 0;top: 0;
+				padding: 30px;
+			}
+
+			fieldset{border:0 none;}
+			legend{
+			display:block;position: absolute;left: 0;top: -9999px;
+			}
+
+			.formLayer fieldset{margin-bottom: 20px;}
+			.formLayer label{display: block;padding:5px 0;font-weight: bold;}
+			.formLayer select{
+				display: block;width: 100%;height: 30px;
+				font-size: 14px;text-align: center;
+				border-radius:5px;border: 1px solid #c4c4c4;
+				text-indent:5px;color: #c4c4c4;
+			}
+			.formLayer .left,
+			.formLayer .right{float:left; width: 135px;}
+
+			.formLayer .left{margin-right: 20px;}
+
+			.formLayer .left input,
+			.formLayer .right input{
+			width: 100%;height: 30px;border-radius: 5px;
+			text-indent:3px;color:#c4c4c4;
+			font-size:14px;border: 1px solid #c4c4c4;
+			}
+			
+
+			.formLayer .tBtn{
+			width: 100%;height: 35px;
+			border:0 none;cursor:pointer;
+			background: #ea4f1f;color:white;
+			font-weight:bold;font-size:1em;
+			border-radius:5px;
+			box-shadow:5px 5px #cdcdcd;
+			transition:0.2s;
+			}
+
+			.formLayer .tBtn:hover{
+			transform:translate(2px, 2px);
+			box-shadow: 0 0 #000;
+			}
 
 
 
 
 			.main_content .l_con>ul{}
-			.main_content .l_con>ul>li{overflow:hidden;cursor:pointer;}
+			.main_content .l_con>ul>li{overflow:hidden;cursor:pointer;height: 240px;}
 			.main_content .l_con>ul>li img{transition:0.3s;}
 			.main_content .l_con>ul>li:hover img{transform:scale(1.2);}
 			.main_content .l_con>ul>li.l_left,
@@ -192,7 +261,10 @@
 
 
 		/*li03*/
-		.weather{width: 233px;height: 240px;position: absolute;overflow:hidden;}
+		.weather{
+			width: 233px;height: 240px;position: absolute;
+			overflow:hidden;cursor:pointer;
+		}
 		.weather>img{width: 100%;height: 100%;transition:0.3s;}
 		.weather>.wTxt{
 			width: 100%;height: 100%;background:rgba(0,0,0,0.7);

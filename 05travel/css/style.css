@@ -2,12 +2,18 @@
 
 /*header*/
 
-#header{border-bottom: 5px solid #0e73a7;}
+#header{
+	border-bottom: 5px solid #0e73a7;
+	background-image: url(../images/04비행기.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size:auto;
+}
 	.headerWrap{width: 980px;margin: 0 auto;}
-		.utilWrap{background: #0e73a7;height: 87px;}
+		.utilWrap{_background: #0e73a7;height: 87px;}
 		.utilWrap>.util{position: relative;}
 		.utilWrap>.util>h1{color:white;position:absolute;line-height: 87px;}
-		.utilWrap>.util>.airPlane{position: absolute;left: -470px;}
+		/*.utilWrap>.util>.airPlane{position: absolute;left: -470px;}*/
 
 		.utilWrap .searchWrap{
 			position: absolute;left: 280px;top: 30px;

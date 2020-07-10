@@ -75,7 +75,7 @@ header#header .btnToggle .my{background-position: -45px 0;}
 #contents .container>ul>li:nth-child(1){background: #f00;width: 75%;height: 450px;}
 #contents .container>ul>li:nth-child(2){background: #ff0;height: 450px;}
 #contents .container>ul>li:nth-child(3){background: #00163b;}
-#contents .container>ul>li:nth-child(4){background: #00f;}
+#contents .container>ul>li:nth-child(4){background: #1651b7;}
 #contents .container>ul>li:nth-child(5){background: #fff;}
 #contents .container>ul>li:nth-child(6){background: skyblue;}
 #contents .container>ul>li:nth-child(7){background: orange;}
@@ -124,13 +124,11 @@ header#header .btnToggle .my{background-position: -45px 0;}
 
 /*li02*/
 #contents .container .viewTwo{position: relative;}
-#contents .container .viewTwo img{
-	position: absolute;right: -235px;top: -50px;
-}
-#contents .container .cover{
+#contents .container .viewTwo img{}
+/*#contents .container .cover{
 	width: 300px;height: 450px;
 	position: absolute;background-color:rgba(91,73,24,0.5);
-}
+}*/
 #contents .container .viewTwoTxt{
 	width: 225px;position: absolute;top: 80px;left: 40px;
 	color:#fff;
@@ -156,24 +154,19 @@ header#header .btnToggle .my{background-position: -45px 0;}
 
 /*li04*/
 
-#contents .infoWrap{position: relative;}
+#contents .infoWrap{padding: 25px;color:white;}
 #contents .infoWrap img{}
 #contents .infoWrap h2{
-	position: absolute;top: 30px;left: 20px;
-	color:white;font-size:22px;
+	padding: 10px 0;border-bottom: 2px solid #fff;
 }
-#contents .infoWrap .infoLine{
-	width: 260px;height: 1px;background: #fff;
-	position: absolute;top: 75px;left: 20px;
-}
-#contents .infoWrap ul{
-	position: absolute;top: 95px;left: 20px;
-	font-size:14px;color: white;
-}
+#contents .infoWrap ul{}
 #contents .infoWrap ul>li{}
 #contents .infoWrap ul>li>p{
-	float: left;display: block;padding-right: 26px;padding-bottom: 10px;
-	cursor: pointer;
+	cursor: pointer;position: relative;
+	font-size: 14px;padding: 5px 0;
+}
+#contents .infoWrap ul>li span{
+	position: absolute;right: 0;
 }
 
 /*li05*/
@@ -211,6 +204,8 @@ header#header .btnToggle .my{background-position: -45px 0;}
 
 /*li07*/
 
+
+
 /*#contents .youtube{position:relative;}
 #contents .youtube img{position: absolute;top: -100px;right: 0;}*/
 /*#contents .movieImg .imgCover{
@@ -238,8 +233,15 @@ header#header .btnToggle .my{background-position: -45px 0;}
 	_border: 1px solid #000;background-color: rgba(253,80,63,0.8);
 	color:white;
 }
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 10%;
+    top: 0;
+    right: 0;
+}
 
-
+/*--*/
 #contents .botWrap{
 	background: white;width: 1200px;height: 60px;margin: 0 auto;
 }

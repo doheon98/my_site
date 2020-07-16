@@ -378,7 +378,7 @@
 
 
 /*company*/
-#subPageCpn{position: relative;}
+#subPageCpn{}
 #subPageCpn .subPageBg{
 	height:290px;
 	background-image: url(../images/subimg01.jpg);
@@ -387,24 +387,24 @@
 	background-size: cover;
 }
 #subPageCpn .companyPageWrap{
-	width: 980px;position: absolute;
-	top: 0;left: 50%;transform:translateX(-50%);
+	width: 980px;height: 870px;margin: 0 auto;
+	position: relative;top: -250px;
 }
 #subPageCpn .companyPageWrap .companyTxtWrap{
-	width: 385px;margin: 0 auto;
-	text-align: center;padding: 30px 0;color:white;
+	width: 385px;margin: 0 auto;text-align: center;
+	padding: 25px 0;color:white;
 }
 #subPageCpn .companyPageWrap h2{
 	font-size:4em;border-bottom: 5px solid #fff;
 }
-#subPageCpn .companyPageWrap p{font-size:16px;padding: 20px;}
-#subPageCpn .companyPageWrap img{}
+#subPageCpn .companyPageWrap p{font-size:16px;padding: 15px;}
+#subPageCpn .companyPageWrap img{box-shadow:  0 0 10px #eee;}
 
 
 
 /*footer*/
 
-#footer
+#footer{}
 	.ftWrap{
 		width: 980px;margin: 0 auto;padding: 30px 0;
 	}

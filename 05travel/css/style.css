@@ -19,7 +19,7 @@
 		.utilWrap>.util{position: relative;}
 		.utilWrap>.util>h1{color:white;position:absolute;line-height: 87px;}
 		/*.utilWrap>.util>.airPlane{position: absolute;left: -470px;}*/
-
+		.utilWrap>.util>h1>a{color:white;}
 		.utilWrap .searchWrap{
 			position: absolute;left: 280px;top: 30px;
 		}
@@ -52,17 +52,40 @@
 		.numWrap .snslogo img{cursor:pointer;}
 
 
-		.navWrap{}
+		.navWrap{position: relative;z-index: 2;}
 		.navWrap>ul{}
 		.navWrap>ul>li{
 			float: left;width:16.66%;border-right: 1px solid #ececec;
 		}
 		.navWrap>ul>li:first-child{border-left: 1px solid #ececec;}
-		.navWrap>ul>li:hover a{background: #0e73a7;color:white;}
+		.navWrap>ul>li:hover{background: #0e73a7;}
+		.navWrap>ul>li:hover a{color:white;}
+		
 		.navWrap>ul>li>a{
 			display: block;text-align: center;line-height: 60px;
 			color:#162731;font-size:18px;font-weight:bold;
 		}
+
+
+		.menubar{
+			width: 100%;background:rgba(0,0,0,0.5);display: block;
+			height: 35px;position: absolute;left: 0;bottom:-40px;
+			display:none;z-index: 1;
+		}
+		.navWrap:hover ~ div.menubar{display: block;}
+
+		.navWrap .smenu{
+			position: absolute;left: 0;display: none;
+		}
+		.navWrap .smenu>li{float: left;}
+		.navWrap .smenu>li>a{
+			display: block;text-align: center;padding-top: 5px;
+			line-height: 35px;width: 75px;font-size:13px;
+		}
+		.navWrap>ul>li:hover .smenu{display: block;}
+		.smenu a:hover{font-weight:bold;}
+		
+		
 
 /*content*/
 
@@ -378,7 +401,7 @@
 
 
 /*company*/
-#subPageCpn{}
+#subPageCpn{_background-color: #efefef;}
 #subPageCpn .subPageBg{
 	height:290px;
 	background-image: url(../images/subimg01.jpg);

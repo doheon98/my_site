@@ -305,6 +305,33 @@
 		.sub_content .r_sliderTxt>p{}
 
 
+
+		
+		/*slider button*/
+			.bx-wrapper .bx-prev {
+			    left: 0px;
+			    background: url(../images/prev.png) no-repeat 0 0px;
+			}
+			.bx-wrapper .bx-next {
+			    right: 0px;
+			    background: url(../images/next.png) no-repeat 0 0px;
+			}
+			.bx-wrapper .bx-controls-direction a {
+			    top: 50%;
+			    margin-top: -54px;
+			    width: 34px;
+			    height: 54px;
+			}
+			.bx-wrapper .bx-next:hover,
+			.bx-wrapper .bx-next:focus {
+			  background-position: 0px 0;
+			}
+	
+
+
+
+
+
 		/*li03*/
 		.weather{
 			width: 233px;height: 240px;position: absolute;

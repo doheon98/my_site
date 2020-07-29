@@ -92,12 +92,13 @@
 		.content>ul>li>a:hover{box-shadow: 0px 0px 0px #000;}
 
 /*content2*/
-div#content{position: relative;}
+div#content{}
 div#content>div.conWrap{
-	height: 1440px;position: absolute;
+	height: 1440px;position: relative;
+}
+	div.main_con{width: 1260px;height: 630px;position: absolute;
 	left:50%;transform:translateX(-50%);
 }
-	div.main_con{width: 1260px;}
 	div.main_con>ul{}
 	div.main_con>ul>li{
 		float: left;width: 25%;height: 315px;background: skyblue;
@@ -105,24 +106,27 @@ div#content>div.conWrap{
 	}
 
 	div.main_con>ul>li:nth-child(3){width: 630px;}
+	div.main_con>ul>li:nth-child(4),
+	div.main_con>ul>li:nth-child(6){background: #e2e2e2;cursor:pointer;}
+	div.main_con>ul>li:nth-child(5),
+	div.main_con>ul>li:nth-child(7){
+		background: #f6f6f6;cursor:pointer;
+	}
 
 	div.main_con .conWrap01{
-		width: 315px;height: 315px;cursor:pointer;
+		position: absolute;left: 50%;top: 50%;
+		transform:translate(-50%,-50%);
 	}
 	div.main_con .conWrap01 img{}
 	div.main_con .conWrap01 p{
 		font-size:20px;height: 30px;line-height: 30px;
-		text-align: center;font-weight:bold;
+		text-align: center;font-weight:bold;padding:10px 0;
 	}
 
 
+	div.sub_con{position: absolute;bottom: 0px;}
+	div.sub_con>img{width: 100%;height: 730px;}
 
-
-
-
-	div.sub_con{
-		height: 730px;width: 100%;
-		background-image: url(../images/sub_con01.jpg);
-		background-repeat: no-repeat;
-		background-position:center;
-	}
+.infoWrap{width: 1260px;height: 630px;margin: 0 auto;}
+.infoWrap>ul{}
+.infoWrap>ul>li{float: left;}

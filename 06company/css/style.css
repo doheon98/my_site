@@ -11,7 +11,10 @@
 #header_top h1 a{color:white;}
 #header_top #main_menu{float: right;}
 #main_menu>ul>li{float: left;}
-#main_menu a{display: block;line-height:50px;padding:0 30px;color:white;font-weight:bold;}
+#main_menu a{
+	display: block;line-height:50px;padding:0 30px;color:white;
+	font-weight:bold;text-shadow:0 0 10px #000
+}
 #main_menu a:after{
 	content:"";display:block;width:0;height: 2px;
 	background:white;transition:0.3s;margin:0 auto}
@@ -98,9 +101,28 @@ div#content>div.conWrap{
 	div.main_con>ul{}
 	div.main_con>ul>li{
 		float: left;width: 25%;height: 315px;background: skyblue;
+		position:  relative;
 	}
 
 	div.main_con>ul>li:nth-child(3){width: 630px;}
 
+	div.main_con .conWrap01{
+		width: 315px;height: 315px;cursor:pointer;
+	}
+	div.main_con .conWrap01 img{}
+	div.main_con .conWrap01 p{
+		font-size:20px;height: 30px;line-height: 30px;
+		text-align: center;font-weight:bold;
+	}
 
-	div.sub_con{background-image: url(../images/subcon01.jpg);}
+
+
+
+
+
+	div.sub_con{
+		height: 730px;width: 100%;
+		background-image: url(../images/sub_con01.jpg);
+		background-repeat: no-repeat;
+		background-position:center;
+	}

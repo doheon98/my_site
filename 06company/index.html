@@ -12,13 +12,14 @@
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider();
+			$(".cSlider01").bxSlider();
 		});
 	</script>
 </head>
 <body>
 	<header id="header" class="main">
 		<div id="header_top" class="clearfix">
-			<h1><a href="#"><img src="images/logo_cgv.png" alt=""></a></h1>
+			<h1><a href="#"><img src="images/h1_cgv.png" alt=""></a></h1>
 			<nav id="main_menu">
 				<ul class="clearfix">
 					<li><a href="#">영화</a></li>
@@ -115,7 +116,20 @@
 					<li> <!-- list02 -->
 						<a href="#"><img src="images/sub_con03.jpg" alt=""></a>
 					</li>
-					<li>3</li>
+					<li> <!-- list03 -->
+						<div class="sliderWrap">
+							<div class="cSlider">
+								<ul class="cSlider01">
+									<li>
+										<img src="images/s_img01.jpg" alt="">
+									</li>
+									<li>
+										<img src="images/s_img01.jpg" alt="">
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
 					<li> <!-- list04 -->
 						<div class="conWrap01">
 							<img src="images/logo_01.png" alt="">
@@ -148,12 +162,45 @@
 		</div>
 		<div class="infoWrap">
 			<ul>
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
+				<li>
+					<div class="conWrap02">
+						<img src="images/logo_05.png" alt="">
+						<p>고객센터</p>
+					</div>
+				</li>
+				<li>
+					<div class="conWrap02">
+						<img src="images/logo_06.png" alt="">
+						<p>1:1 문의</p>
+					</div>
+				</li>
+				<li>
+					<div class="conWrap02">
+						<img src="images/logo_07.png" alt="">
+						<p>단체/대관 문의</p>
+					</div>
+				</li>
+				<li>
+					<div class="conWrap02">
+						<img src="images/logo_08.png" alt="">
+						<p>멤버십</p>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
+
+	<footer id="footer">
+		<div class="footer">
+			<ul class="footWrap clearfix">
+				<li>
+					<img src="images/h1_cgv.png" alt="">
+				</li>
+				<li>
+					
+				</li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>

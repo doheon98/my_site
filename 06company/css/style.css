@@ -2,7 +2,7 @@
 
 /*header*/
 #header{position: relative;}
-#header.main{height: 1405px;}
+#header.main{height: 1405px;background: #fdfcf0;}
 #header_top{
 	width: 1260px;height: 50px;position: absolute;_background-color:skyblue;
 	left:50%;transform:translateX(-50%);top:30px;z-index:1
@@ -92,7 +92,7 @@
 		.content>ul>li>a:hover{box-shadow: 0px 0px 0px #000;}
 
 /*content2*/
-div#content{}
+div#content{background: #fdfcf0;}
 div#content>div.conWrap{
 	height: 1440px;position: relative;
 }
@@ -159,7 +159,14 @@ div#content>div.conWrap{
 	.footerWrap{width: 1260px;height: 200px;margin: 0 auto;padding: 30px 0;}
 	.footerWrap .logoWrap{float: left;margin-right:180px;}
 	.footerWrap .f_txt{float: left;}
-	.footerWrap .f_txt li{float: left;margin-right: 30px;}
+	.footerWrap .f_txt li{float: left;margin-right: 30px;margin-bottom: 20px;}
 	.footerWrap .f_txt li a{color:white;font-size:12px;display: block;}
 
-	address{float: left;color:white;}
+	address{float: left;color:white;font-style:normal;font-size:13px;}
+
+
+
+
+/*sub_page*/
+.spWrap{position: absolute;top: 0;}
+.spWrap>img{}

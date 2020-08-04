@@ -168,5 +168,36 @@ div#content>div.conWrap{
 
 
 /*sub_page*/
-.spWrap{position: absolute;top: 0;}
-.spWrap>img{}
+.spWrap{height: 1700px;background: #fdfcf0;}
+.spWrap>.img{
+	width: 100%;height: 460px;
+	position: absolute;top: 0;
+	background-image: url(../images/sp_con01.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+	border-bottom: 2px solid #da281c;
+}
+
+.spWrap>ul{
+	width: 1260px;height: 70px;background: #fdfcf0;
+	position: absolute;top: 388px;left: 50%;
+	transform:translateX(-50%);
+}
+.spWrap>ul>li{
+	float: left;width: 25%;border-right: 2px solid #ccc;
+}
+.spWrap>ul>li:last-child{border-right: none;}
+.spWrap>ul>li>a:hover{background: #da281c;color:white;}
+.spWrap>ul>li>a{
+	display: block;text-align: center;line-height: 70px;
+	font-weight:bold;font-size:18px;
+}
+.navTxt{
+	width: 1260px;_height: 2500px;
+	position: absolute;top: 500px;left: 50%;
+	transform:translateX(-50%);
+}
+.navTxt a{font-size: 14px;font-weight:bolder;}
+.bi{}
+.bi>img{position: absolute;top: 600px;left: 50%;transform:translateX(-50%)}

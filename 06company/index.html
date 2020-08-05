@@ -11,8 +11,14 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
-			$(".cSlider01").bxSlider();
+			$(".slider").bxSlider({
+				auto:true,
+			});
+			$(".cSlider01").bxSlider({
+				auto:true,
+				controls:false,
+				pager:false
+			});
 		});
 	</script>
 </head>
@@ -54,7 +60,7 @@
 			</ul>
 		</div>
 		<div class="content">
-			<ul>
+			<ul class="clearfix">
 				<li> <!-- list01 -->
 					<img src="images/con01_02.jpg" alt="">
 					<!-- <div class="cover">
@@ -167,7 +173,7 @@
 			</div>
 		</div>
 		<div class="infoWrap">
-			<ul class="claerfix">
+			<ul class="clearfix">
 				<li>
 					<div class="conWrap02">
 						<img src="images/logo_05.png" alt="">
@@ -199,7 +205,7 @@
 	<footer id="footer">
 		<div class="footerWrap clearfix">
 			<div class="logoWrap">
-				<img src="images/h1_cgv.png" alt="">
+				<a href="#"><img src="images/h1_cgv.png" alt=""></a>
 			</div>
 			<ul class="f_txt clearfix">
 				<li><a href="#">회원약관</a></li>
@@ -215,6 +221,12 @@
 				대표이사 기원규사업자등록번호 313-87-00979통신판매업신고번호 제1184호개인정보 보호책임자 이미선<br>
 				COPYRIGHT© LOTTE CINEMA ALL RIGHT RESERVED.
 			</address>
+			<ul class="sns_logo clearfix">
+				<li><a href="#"><img src="images/face_logo.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/google_logo.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/twitter_logo.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/youtube_logo.jpg" alt=""></a></li>
+			</ul>
 		</div>
 	</footer>
 </body>

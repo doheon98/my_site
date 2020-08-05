@@ -73,11 +73,11 @@
 		.content>ul>li>img{width: 315px;height: 450px;}
 		/*.content>ul>li>div.cover{
 			height: 450px;position: absolute;
-			background:rgba(0,0,0,0.5);color:white;top: -450px;
-			padding: 30px 20px;_display: none;transition:0.3s;
+			background:rgba(0,0,0,0.6);color:white;top: 0px;
+			padding: 30px 20px;display: none;transition:0.3s;
 		}
 
-		.content>ul>li>img:hover ~ div.cover{display: block;top: 0;}*/
+		.content>ul>li>img:hover ~ div.cover{display: block;}*/
 
 		.content>ul>li>div.conTxtWrap{padding: 20px 40px;}
 		.content>ul>li>div.conTxtWrap>h3{font-size:20px;padding-bottom: 13px;}
@@ -170,7 +170,12 @@ div#content>div.conWrap{
 	.footerWrap{width: 1260px;height: 200px;margin: 0 auto;padding: 30px 0;}
 	.footerWrap .logoWrap{float: left;margin-right:180px;}
 	.footerWrap .f_txt{float: left;}
-	.footerWrap .f_txt li{float: left;margin-right: 30px;margin-bottom: 20px;}
+	.footerWrap .f_txt li{
+		float: left;margin-bottom: 20px;
+		padding:0 15px;border-left: 1px solid #fff;
+	}
+	.footerWrap .f_txt li:first-child{padding-left:0;border-left: none;}
+	.footerWrap .f_txt a:hover{font-weight:bold;}
 	.footerWrap .f_txt li a{color:white;font-size:12px;display: block;}
 
 	address{float: left;color:white;font-style:normal;font-size:13px;}
@@ -212,3 +217,7 @@ div#content>div.conWrap{
 .navTxt a{font-size: 14px;font-weight:bolder;}
 .bi{}
 .bi>img{position: absolute;top: 600px;left: 50%;transform:translateX(-50%)}
+
+.footerWrap .sns_logo{float: right;}
+.footerWrap .sns_logo li{float: left;margin-left: 5px;}
+.footerWrap .sns_logo li a{display: block;}

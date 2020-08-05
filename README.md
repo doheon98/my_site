@@ -4,3 +4,4 @@
 03college - https://doheon98.github.io/my_site/03college
 04klass - https://doheon98.github.io/my_site/04klass
 05travel - https://doheon98.github.io/my_site/05travel
+06company - https://doheon98.github.io/my_site/06company

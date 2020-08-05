@@ -23,7 +23,7 @@
 /*bxslider*/
 .slider_wrap ul li{height: 1005px;}
 .slider_wrap li.first{
-	background:url(../images/mainimg03.jpg) no-repeat center;
+	background:url(../images/mainimg06.jpg) no-repeat center;
 	background-size:cover;
 }
 .slider_wrap li.second{
@@ -130,8 +130,19 @@ div#content>div.conWrap{
 		border: 0 none;
 	}
 
-	div.sub_con{position: absolute;bottom: 0px;}
-	div.sub_con>img{width: 100%;height: 730px;}
+	/*div.sub_con{position: absolute;bottom: 0px;}
+	div.sub_con>img{width: 100%;height: 730px;}*/
+	div.sub_con{
+		width: 100%;height: 730px;
+		position: absolute;bottom: 0;
+		background-image: url(../images/sub_con01.jpg);
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:cover;
+	}
+	div.sub_con>ul{width: 1260px;margin: 0 auto;background: #ff0;}
+	div.sub_con>ul>li{width: 25%;height: 315px;float: left;}
+	div.sub_con>ul>li>a{display: block;}
 
 	.infoWrap{width: 1260px;height: 475px;margin: 0 auto;padding: 80px 0;}
 	.infoWrap>ul{}

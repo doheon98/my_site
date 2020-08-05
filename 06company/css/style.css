@@ -13,7 +13,7 @@
 #main_menu>ul>li{float: left;}
 #main_menu a{
 	display: block;line-height:50px;padding:0 30px;color:white;
-	font-weight:bold;text-shadow:0 0 10px #000
+	font-weight:bold;text-shadow:0 0 10px #000;font-size: 18px;
 }
 #main_menu a:after{
 	content:"";display:block;width:0;height: 2px;

@@ -139,6 +139,7 @@ div#content>div.conWrap{
 		background-repeat:no-repeat;
 		background-position:center;
 		background-size:cover;
+		background-attachment: fixed;
 	}
 	div.sub_con>ul{width: 1260px;margin: 0 auto;background: #ff0;}
 	div.sub_con>ul>li{width: 25%;height: 315px;float: left;}

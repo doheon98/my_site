@@ -19,6 +19,23 @@
 				controls:false,
 				pager:false
 			});
+
+			var winHeight = $(document).height();
+
+			$(window).scroll(function(){
+				var scrollY = $(window).scrollTop();
+				$(".scrollY").html(scrollY);
+
+				if(winHeight/2 < scrollY){
+					$(".top").addClass("view");
+				}else{
+					$(".top").removeClass("view");
+				}
+			});
+
+			$(".top").click(function(){
+				$("html,body").animate({scrollTop:0},300);
+			});
 		});
 	</script>
 </head>
@@ -110,6 +127,7 @@
 				<li>12</li> -->
 			</ul>
 		</div>
+		<div class="top">top</div>
 	</header>
 
 	<div id="content">

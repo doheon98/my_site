@@ -5,7 +5,7 @@
 #header.main{height: 1405px;background: #fdfcf0;}
 #header_top{
 	width: 1260px;height: 50px;position: absolute;_background-color:skyblue;
-	left:50%;transform:translateX(-50%);top:30px;z-index:1
+	left:50%;transform:translateX(-50%);top:30px;z-index:1;
 }
 #header_top h1{float: left;line-height:50px;padding-left:10px;}
 #header_top h1 a{color:white;}
@@ -58,7 +58,7 @@
 
 div.top{
 	position: fixed;width: 50px;height: 50px;
-	line-height: 50;right: 50px;bottom: 50px;
+	line-height: 50px;right: 50px;bottom: 50px;
 	border-radius: 50%;background: #a39383;color:white;
 	text-align: center;cursor:pointer;
 	animation:viewTop 1s infinite alternate;
@@ -236,3 +236,5 @@ div#content>div.conWrap{
 .footerWrap .sns_logo{float: right;}
 .footerWrap .sns_logo li{float: left;margin-left: 5px;}
 .footerWrap .sns_logo li a{display: block;}
+
+.action{background: #da281c;}

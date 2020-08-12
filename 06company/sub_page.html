@@ -11,8 +11,24 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
-			$(".cSlider01").bxSlider();
+			
+
+			var winHeight = $(document).height();
+
+			$(window).scroll(function(){
+				var scrollY = $(window).scrollTop();
+				$(".scrollY").html(scrollY);
+
+				if(winHeight/5 < scrollY){
+					$(".top").addClass("view");
+				}else{
+					$(".top").removeClass("view");
+				}
+			});
+
+			$(".top").click(function(){
+				$("html,body").animate({scrollTop:0},300);
+			});
 		});
 	</script>
 </head>
@@ -28,7 +44,8 @@
 					<li><a href="#">이벤트</a></li>
 				</ul>
 			</nav>
-		</div>		
+		</div>
+		<div class="top">top</div>
 	</header>
 	
 	<div class="spWrap">
@@ -53,7 +70,7 @@
 	<footer id="footer">
 		<div class="footerWrap clearfix">
 			<div class="logoWrap">
-				<img src="images/h1_cgv.png" alt="">
+				<a href="#"><img src="images/h1_cgv.png" alt=""></a>
 			</div>
 			<ul class="f_txt clearfix">
 				<li><a href="#">회원약관</a></li>
@@ -73,7 +90,7 @@
 				<li><a href="#"><img src="images/face_logo.jpg" alt=""></a></li>
 				<li><a href="#"><img src="images/google_logo.jpg" alt=""></a></li>
 				<li><a href="#"><img src="images/twitter_logo.jpg" alt=""></a></li>
-				<li><a href="#"><img src="images/youtube_logo.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/youtube_logo.jpg" alt=""></a></li> 
 			</ul>
 		</div>
 	</footer>

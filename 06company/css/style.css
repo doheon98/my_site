@@ -226,7 +226,7 @@ div#content>div.conWrap{
 #main_menu a:hover:after{width: 100%;}
 
 /*bxslider*/ 
-.slider_wrap ul li{height: 400px;width: 100%;}
+.slider_wrap ul li{height: 430px;width: 100%;}
 .slider_wrap li.first{
 	background:url(../images/mainimg06.jpg) no-repeat center;
 	background-size:cover;

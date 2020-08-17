@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+
+
+#page1{
+	background-color: #000;
+	background-image: url(../images/img01.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom 0px;
+	background-size: 26%;
+}
+#page2{background-image: url(../images/sec_package_v1.jpg);}
+#page3{background-image: url(../images/sec_financial_bg.jpg);}
+/*#page4{background-image: url(../images/bg4.jpg);}*/
+
+.section{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+
+nav#navTop{
+	position: fixed;z-index:1;width: 100%;
+	background-color: #cdcdcd;
+}
+nav#navTop li{float: left;}
+nav#navTop li a{display: block;line-height:50px;text-align: center;padding: 0 10px;}
+
+nav#navTop li.active{background-color:skyblue;}
+.scroll{
+	position: absolute;left: 50%;transform:translateX(-50%);
+	bottom: 20px;animation:xScroll 0.8s infinite alternate;
+}
+@keyframes xScroll{
+	from{bottom: 20px;}
+	to{bottom: 40px;}
+}
+.main{
+	width: 700px;position: absolute;left: 50%;top:15%;transform: translateX(-50%);
+	color:white;text-align: center;
+}
+.main a{
+	display: block;width: 150px;
+	border: 1px solid #fff;line-height: 35px;
+	color:white;border-radius:18px;margin: 0 auto;
+}
+.main a:hover{background-color: #ffffff;color:#000;}
+
+#onViewOne{top:10%;transition:0.3s;opacity:0;}
+#onViewOne.move{top:15%;opacity:1;}
+
+#onViewTwo{left:10%;transition:0.3s;opacity:0;}
+#onViewTwo.move{left:50%;opacity:1;}
+
+
+.slide{position: relative;overflow: hidden;}
+/*.slide .view{
+	position: absolute;width: 80%;height: 500px;
+	_background-color: skyblue;left:50%;top:50%;
+	transform: translate(-50%,-50%);
+}*/
+.slide .view{
+	position: absolute;top: 50%;left: 50%;
+	transform:translate(-50%,-50%);
+}
+.slide .view img{
+	
+}
+.slide .view .stBox{
+	width: 350px;height: 500px;color:#444;
+	position: absolute;top: 280px;right: 300px;
+}
+
+.f3em{font-size:3em !important}
+.f25em{font-size:2.5em !important}
+.f2em{font-size:2em !important}
+.f15em{font-size:1.5em !important}
+.mb20{margin-bottom: 20px !important;}
+.fbold{font-weight:bold;}
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #9E9E9E;
+}  /*pager color*/

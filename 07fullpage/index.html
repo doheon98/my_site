@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.fullpage.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 <script>
 		$(function(){
 
@@ -33,86 +34,6 @@
 			});
 		});
 	</script>
-	<style>
-		#page1{
-			background-color: #000;
-			background-image: url(images/img01.jpg);
-			background-repeat: no-repeat;
-			background-position: center bottom 0px;
-			background-size: 25%;
-		}
-		#page2{background-image: url(images/bg2.jpg);}
-		#page3{background-image: url(images/sec_financial_bg.jpg);}
-		#page4{background-image: url(images/bg4.jpg);}
-
-		.section{
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size:cover;
-		}
-
-		nav#navTop{
-			position: fixed;z-index:1;width: 100%;
-			background-color: #cdcdcd;
-		}
-		nav#navTop li{float: left;}
-		nav#navTop li a{display: block;line-height:50px;text-align: center;padding: 0 10px;}
-
-		nav#navTop li.active{background-color:skyblue;}
-		.scroll{
-			position: absolute;left: 50%;transform:translateX(-50%);
-			bottom: 20px;animation:xScroll 0.8s infinite alternate;
-		}
-		@keyframes xScroll{
-			from{bottom: 20px;}
-			to{bottom: 40px;}
-		}
-		.main{
-			width: 700px;position: absolute;left: 50%;top:15%;transform: translateX(-50%);
-			color:white;text-align: center;
-		}
-		.main a{
-			display: block;width: 150px;
-			border: 1px solid #fff;line-height: 35px;
-			color:white;border-radius:18px;margin: 0 auto;
-		}
-		.main a:hover{background-color: #ffffff;color:#000;}
-
-		#onViewOne{top:10%;transition:0.3s;opacity:0;}
-		#onViewOne.move{top:15%;opacity:1;}
-
-		#onViewTwo{left:10%;transition:0.3s;opacity:0;}
-		#onViewTwo.move{left:50%;opacity:1;}
-
-
-		.slide{position: relative;overflow: hidden;}
-		/*.slide .view{
-			position: absolute;width: 80%;height: 500px;
-			_background-color: skyblue;left:50%;top:50%;
-			transform: translate(-50%,-50%);
-		}*/
-		.slide .view{
-			position: absolute;top: 50%;left: 50%;
-			transform:translate(-50%,-50%);
-		}
-		.slide .view img{
-			width: 1500px;
-		}
-		.slide .view .stBox{
-			width: 250px;height: 500px;color:#444;
-			position: absolute;top: 150px;right: 150px;
-		}
-
-		.f3em{font-size:3em !important}
-		.f25em{font-size:2.5em !important}
-		.f2em{font-size:2em !important}
-		.f15em{font-size:1.5em !important}
-		.mb20{margin-bottom: 20px !important;}
-		.fbold{font-weight:bold;}
-
-
-
-	</style>
 </head>
 <body>
 	<nav id="navTop">
@@ -159,7 +80,38 @@
 			</div>
 			<div class="slide">
 				<div class="view">
-					<img src="images/sec_collabo_benefit01_v2.jpg" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nobis rerum, rem dicta quisquam eveniet dolore provident pariatur est atque quis voluptatibus sit distinctio impedit voluptatum non, dignissimos modi facilis!
+					<img src="images/sec_collabo_benefit02_v2.jpg" alt="">
+					<div class="stBox">
+						<h2 class="f2em mb20">캠핑할 때</h2>
+						<p>캠핑 도구 보관부터 다양하게 사용 가능한 툴 박스와 여행의 아쉬움을 달래 줄 보딩패스 스타일의 케이스 까지!</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="view">
+					<img src="images/sec_collabo_benefit03_v2.jpg" alt="">
+					<div class="stBox">
+						<h2 class="f2em mb20">일할 때</h2>
+						<p>나에게 꼭 필요한 에센셜 아이템들은 파우치에 쏙!<br>중요한 메모지는 잘 보이는 클리어 케이스 안에 쏙!</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="view">
+					<img src="images/sec_collabo_benefit04_v2.jpg" alt="">
+					<div class="stBox">
+						<h2 class="f2em mb20">취미를 즐길 때</h2>
+						<p>개성만점인 한정판 노트20 스티커로 더하는 재미!<br>툴박스부터 노트북, 캐리어까지 원하는대로 커스터마이징!</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="view">
+					<img src="images/sec_collabo_benefit05_v2.jpg" alt="">
+					<div class="stBox">
+						<h2 class="f2em mb20">요리할 때</h2>
+						<p>노트20를 보관할 수 있는 프론트 포켓부터 스타일리시한 디테일이 돋보이는 에이프런!</p>
+					</div>
 				</div>
 			</div>
 		</div>

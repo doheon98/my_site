@@ -21,12 +21,27 @@
 
 nav#navTop{
 	position: fixed;z-index:1;width: 100%;
-	background-color: #cdcdcd;
+	background-color: rgba(180,180,180,0.7);
 }
-nav#navTop li{float: left;}
-nav#navTop li a{display: block;line-height:50px;text-align: center;padding: 0 10px;}
 
-nav#navTop li.active{background-color:skyblue;}
+
+nav#navTop>a>h1{
+	width: 200px;
+	background-image: url(../images/samsung_logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 60px;margin-left: 100px;
+	text-indent:-9999px;float: left;
+}
+nav#navTop>ul{float: right;padding-right:100px;}
+nav#navTop li{float: left;}
+nav#navTop li a{
+	display: block;line-height:60px;text-align: center;
+	padding: 0 10px;font-weight:bold;color:#353535;
+}
+
+nav#navTop li.active{background-color:#fff;transition: 0.5s;}
 .scroll{
 	position: absolute;left: 50%;transform:translateX(-50%);
 	bottom: 20px;animation:xScroll 0.8s infinite alternate;
@@ -82,3 +97,9 @@ nav#navTop li.active{background-color:skyblue;}
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: #9E9E9E;
 }  /*pager color*/
+
+.section{}
+.section .footer{padding:30px;}
+.section .footer ul{}
+.section .footer ul li{float: left;padding-right:30px;}
+.section .footer ul li a{display: block;color:white;}

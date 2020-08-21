@@ -9,9 +9,11 @@
 	background-position: center bottom 0px;
 	background-size: 20%;
 }
-#page2{background-color: #f3f3f3;}
-#page3{background-color: #222;}
-#page4{background-image: url(../images/sec_financial_bg.jpg);}
+#page2{}
+#page3{background-color: #f3f3f3;}
+#page4{background-color: #222;}
+#page5{background-color: #f3f3f3;}
+#page6{background-image: url(../images/sec_financial_bg.jpg);}
 /*#page4{background-image: url(../images/bg4.jpg);}*/
 
 .section{
@@ -32,20 +34,21 @@ nav#navTop>a>h1{
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	height: 40px;margin-left: 200px;
+	height: 50px;margin-left: 200px;
 	text-indent:-9999px;float: left;
 }
 nav#navTop>ul{float: right;padding-right:200px;}
 nav#navTop li{float: left;}
 nav#navTop li a{
-	display: block;line-height:40px;text-align: center;
-	padding: 0 10px;font-weight:bold;color:#222;font-size:14px;
+	display: block;line-height:50px;text-align: center;
+	padding: 0 10px;font-weight:bold;color:#222;font-size:16px;
 }
 
 nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 .scroll{
 	position: absolute;left: 50%;transform:translateX(-50%);
 	bottom: 20px;animation:xScroll 0.8s infinite alternate;
+	z-index: 1;
 }
 @keyframes xScroll{
 	from{bottom: 20px;}
@@ -55,11 +58,12 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 
 .s_pen{
 	position: absolute;right: 15%;bottom: 20%;transform:rotate(40deg);
-	animation:sPen 4s infinite alternate ease-in-out;
+	animation:sPen 10s infinite /*alternate*//* ease-in-out*/;
 }
 @keyframes sPen{
-	from{right: 15%;bottom: 20%;transform:rotate(40deg);}
-	to{right: 85%;bottom: 15%;transform:rotate(-20deg);}
+	0%{right: 15%;bottom: 20%;transform:rotate(40deg);}
+	50%{right: 85%;bottom: 15%;transform:rotate(-20deg);}
+	100%{right: 15%;bottom: 20%;transform:rotate(40deg);}
 	/*100%{right: 15%;bottom: 20%;transform:rotate(40deg);}*/
 }
 
@@ -102,19 +106,24 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 
 
 /*---02---*/
+
+#video{
+	position: absolute;width: 100%;height: 100%;
+	object-fit: cover;top: 0;
+}
+
+/*---03---*/
 #onViewTwo{left:10%;transition:0.3s;opacity:0;}
 #onViewTwo.move{left:50%;opacity:1;}
 
-#page2 img{
+#page3 img{
 	position: absolute;left: 50%;top: 60%;
 	transform:translate(-50%, -50%);
 }
-#page2 p{font-size:12px;color:#888;}
+#page3 p{font-size:12px;color:#888;}
 
-
-
-/*---03---*/
-.section#page3{width: 100%;}
+/*---04---*/
+.section#page4{width: 100%;}
 .con01_txt{
 	color:white;text-align: center;padding: 40px;
 }

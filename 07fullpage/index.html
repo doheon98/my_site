@@ -13,7 +13,7 @@
 		$(function(){
 
 			$("#fullpage").fullpage({
-				anchors:["a1st","a2st","a3st","a4st","a5st"],
+				anchors:["a1st","a2st","a3st","a4st","a5st","a6st"],
 				menu:"#topMenu",
 				navigation:true,
 				navigationPosition: 'right',
@@ -25,7 +25,7 @@
 						$("#onViewOne").removeClass("move");
 					}
 
-					if(index == 2){
+					if(index == 3){
 						$("#onViewTwo").addClass("move");
 					}else{
 						$("#onViewTwo").removeClass("move");
@@ -43,14 +43,16 @@
 		<!-- ul#topMenu>li*4>a[#a$st]>{MENu$} -->
 		<ul id="topMenu" class="clearfix">
 			<li data-menuanchor="a1st"><a href="#a1st">사전구매</a></li>
-			<li data-menuanchor="a2st"><a href="#a2st">체험하기</a></li>
-			<li data-menuanchor="a3st"><a href="#a3st">구매혜택</a></li>
-			<li data-menuanchor="a4st"><a href="#a4st">혜택보기</a></li>
-			<li data-menuanchor="a5st"><a href="#a5st">더 알아보기</a></li>
+			<li data-menuanchor="a2st"><a href="#a2st">광고영상</a></li>
+			<li data-menuanchor="a3st"><a href="#a3st">제품구성</a></li>
+			<li data-menuanchor="a4st"><a href="#a4st">공통혜택</a></li>
+			<li data-menuanchor="a5st"><a href="#a5st">선착순 혜택</a></li>
+			<li data-menuanchor="a6st"><a href="#a6st">더 알아보기</a></li>
+			
 		</ul>
 	</nav>
 	<div id="fullpage">
-
+		<!-- 01p -->
 		<div class="section" id="page1" data-anchor="a1st">
 			<div class="main" id="onViewOne">
 				<h3 class="f3em mb20 fbold">Galaxy Note20 | 20 Ultra 5G</h3>
@@ -71,7 +73,18 @@
 			</div>
 		</div>
 
+		<!-- 02p -->
 		<div class="section" id="page2" data-anchor="a2st">
+			<video id="video" autoplay muted data-autoplay loop controls>
+				<source src="video/note20.mp4" type="video/mp4">
+			</video>
+			<div class="scroll">
+				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+
+		<!-- 03p -->
+		<div class="section" id="page3" data-anchor="a3st">
 			<div class="con02_wrap">
 				<img src="images/sec_package_v1.jpg" alt="">
 			</div>
@@ -81,12 +94,12 @@
 				<!-- <a href="#">MORE</a> -->
 			</div>
 			<div class="scroll">
-				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 		</div>
 
-
-		<div class="section" id="page3" data-anchor="a3st">
+		<!-- 04p -->
+		<div class="section" id="page4" data-anchor="a4st">
 			<div class="con01_wrap">
 				<div class="con01_txt">
 					<p class="f15em fbold fcolor01">Galaxy Note20 | 20 Ultra 5G</p>
@@ -136,65 +149,67 @@
 				</ul>
 			</div>
 			<div class="scroll">
-				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
-			</div>
-		</div>
-		
-		<div class="section" id="page4" data-anchor="a4st">
-			<div class="scroll">
 				<a href="#a5st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 		</div>
-
+		<!-- 05p -->
 		<div class="section" id="page5" data-anchor="a5st">
-			<div class="slide">
-				<div class="view">
-					<img src="images/sec_collabo_benefit01_v2.jpg" alt="">
-					<div class="stBox">
-						<h2 class="f3em mb20">Work & Play Kit</h2>
-						<p class="f15em">세상에서 하나뿐인 삼성닷컴 X FRANTZ 컬래버레이션 에디션을 삼성닷컴에서 단독으로 만나보세요.</p>
+			<div class="slide_wrap">
+				<div class="slide">
+					<div class="view">
+						<img src="images/sec_collabo_benefit01_v2.jpg" alt="">
+						<div class="stBox">
+							<h2 class="f3em mb20">Work & Play Kit</h2>
+							<p class="f15em">세상에서 하나뿐인 삼성닷컴 X FRANTZ 컬래버레이션 에디션을 삼성닷컴에서 단독으로 만나보세요.</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="view">
+						<img src="images/sec_collabo_benefit02_v2.jpg" alt="">
+						<div class="stBox">
+							<h2 class="f2em mb20">캠핑할 때</h2>
+							<p>캠핑 도구 보관부터 다양하게 사용 가능한 툴 박스와 여행의 아쉬움을 달래 줄 보딩패스 스타일의 케이스 까지!</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="view">
+						<img src="images/sec_collabo_benefit03_v2.jpg" alt="">
+						<div class="stBox">
+							<h2 class="f2em mb20">일할 때</h2>
+							<p>나에게 꼭 필요한 에센셜 아이템들은 파우치에 쏙!<br>중요한 메모지는 잘 보이는 클리어 케이스 안에 쏙!</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="view">
+						<img src="images/sec_collabo_benefit04_v2.jpg" alt="">
+						<div class="stBox">
+							<h2 class="f2em mb20">취미를 즐길 때</h2>
+							<p>개성만점인 한정판 노트20 스티커로 더하는 재미!<br>툴박스부터 노트북, 캐리어까지 원하는대로 커스터마이징!</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="view">
+						<img src="images/sec_collabo_benefit05_v2.jpg" alt="">
+						<div class="stBox">
+							<h2 class="f2em mb20">요리할 때</h2>
+							<p>노트20를 보관할 수 있는 프론트 포켓부터 스타일리시한 디테일이 돋보이는 에이프런!</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="slide">
-				<div class="view">
-					<img src="images/sec_collabo_benefit02_v2.jpg" alt="">
-					<div class="stBox">
-						<h2 class="f2em mb20">캠핑할 때</h2>
-						<p>캠핑 도구 보관부터 다양하게 사용 가능한 툴 박스와 여행의 아쉬움을 달래 줄 보딩패스 스타일의 케이스 까지!</p>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="view">
-					<img src="images/sec_collabo_benefit03_v2.jpg" alt="">
-					<div class="stBox">
-						<h2 class="f2em mb20">일할 때</h2>
-						<p>나에게 꼭 필요한 에센셜 아이템들은 파우치에 쏙!<br>중요한 메모지는 잘 보이는 클리어 케이스 안에 쏙!</p>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="view">
-					<img src="images/sec_collabo_benefit04_v2.jpg" alt="">
-					<div class="stBox">
-						<h2 class="f2em mb20">취미를 즐길 때</h2>
-						<p>개성만점인 한정판 노트20 스티커로 더하는 재미!<br>툴박스부터 노트북, 캐리어까지 원하는대로 커스터마이징!</p>
-					</div>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="view">
-					<img src="images/sec_collabo_benefit05_v2.jpg" alt="">
-					<div class="stBox">
-						<h2 class="f2em mb20">요리할 때</h2>
-						<p>노트20를 보관할 수 있는 프론트 포켓부터 스타일리시한 디테일이 돋보이는 에이프런!</p>
-					</div>
-				</div>
+			<div class="scroll">
+				<a href="#a6st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 		</div>
-
-		<div class="section fp-auto-height" data-anchor="a5st">
+		<!-- 06p -->
+		<div class="section" id="page6" data-anchor="a6st">
+		</div>
+		<!-- ft -->
+		<div class="section fp-auto-height" data-anchor="a7st">
 			<div class="footer" style="height:300px;background-color:#1f1f1f; ">
 				<ul class="clearfix">
 					<li><a href="#">고객문의</a></li>

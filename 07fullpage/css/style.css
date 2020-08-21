@@ -89,7 +89,7 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 
 @keyframes phoneU{
 	0%{top: -100%;opacity: 0;}
-	75%{top: 22%;}
+	75%{top: 23%;}
 	100%{top: 20%;opacity: 1;}
 }
 
@@ -100,7 +100,7 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 
 @keyframes phone01{
 	0%{top: 100%;opacity: 0;}
-	75%{top: 18%;}
+	75%{top: 17%;}
 	100%{top: 20%;opacity: 1;}
 }
 
@@ -192,8 +192,11 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 	
 }
 .slide .view .stBox{
-	width: 350px;height: 500px;color:#444;
-	position: absolute;top: 280px;right: 300px;
+	width: 475px;_height: 500px;color:#444;padding:30px;
+	position: absolute;top: 270px;right: 200px;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 10px 10px 0 rgba(170,170,170,0.8);
+	border-radius:8px;
 }
 
 .f3em{font-size:3em !important}

@@ -55,7 +55,7 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 
 .s_pen{
 	position: absolute;right: 15%;bottom: 20%;transform:rotate(40deg);
-	animation:sPen 3s infinite alternate ease-in-out;
+	animation:sPen 4s infinite alternate ease-in-out;
 }
 @keyframes sPen{
 	from{right: 15%;bottom: 20%;transform:rotate(40deg);}
@@ -80,23 +80,23 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 
 .phone01{
 	position: absolute;right: 15%;top: 20%;
-	animation: phoneU 1s alternate;
+	animation: phoneU 2s alternate;
 }
 
 @keyframes phoneU{
 	0%{top: -100%;opacity: 0;}
-	75%{top: 25%;}
+	75%{top: 22%;}
 	100%{top: 20%;opacity: 1;}
 }
 
 .phone02{
 	position: absolute;left: 15%;top: 20%;;
-	animation: phone01 1s alternate;
+	animation: phone01 2s alternate;
 }
 
 @keyframes phone01{
 	0%{top: 100%;opacity: 0;}
-	75%{top: 15%;}
+	75%{top: 18%;}
 	100%{top: 20%;opacity: 1;}
 }
 

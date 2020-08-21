@@ -24,27 +24,36 @@
 
 nav#navTop{
 	position: fixed;z-index:1;width: 100%;
-	background-color: rgba(150,150,150,0.8);
+	background-color: rgba(255,255,255,1);
+	border-bottom: 2px solid #000;
 }
 
+nav#navTop>div{float: left;}
+nav#navTop>div>p{
+	line-height:50px;padding-left: 30px;
+}
 
 nav#navTop>a>h1{
 	width: 200px;
-	background-image: url(../images/samsung_logo.png);
+	background-image: url(../images/pngflow.com.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	height: 50px;margin-left: 200px;
+	height: 50px;margin-left: 250px;
 	text-indent:-9999px;float: left;
 }
-nav#navTop>ul{float: right;padding-right:200px;}
+nav#navTop>ul{float: right;padding-right:250px;}
 nav#navTop li{float: left;}
 nav#navTop li a{
 	display: block;line-height:50px;text-align: center;
-	padding: 0 10px;font-weight:bold;color:#222;font-size:16px;
+	padding: 0 20px;font-weight:bold;color:#222;font-size:16px;
 }
 
 nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
+
+
+
+
 .scroll{
 	position: absolute;left: 50%;transform:translateX(-50%);
 	bottom: 20px;animation:xScroll 0.8s infinite alternate;
@@ -69,13 +78,14 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 
 /*---01---*/
 .main{
-	width: 700px;position: absolute;left: 50%;top:10%;transform: translateX(-50%);
-	color:white;text-align: center;
+	width: 700px;position: absolute;left: 50%;top:10%;
+	transform: translateX(-50%);color:white;text-align: center;
 }
 .main a{
 	display: block;width: 150px;
 	border: 1px solid #fff;line-height: 35px;
 	color:white;border-radius:18px;margin: 0 auto;
+
 }
 .main a:hover{background-color: #ffffff;color:#777;}
 
@@ -132,14 +142,17 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 .con01>li{float: left;width: 50%;border-left: 1px solid #ddd;}
 .con01>li:first-child{border-left: none;}
 
-.con01_01{position: relative;width: 450px;left: 50%;transform: translateX(-50%);}
+.con01_01{
+	position: relative;width: 450px;left: 50%;
+	transform: translateX(-50%);
+}
 .con01_01:before{
 	content:"사은품 선택 (택1)";color:white;padding-bottom: 5px;
 	border-bottom: 1px solid #fff;
 }
 .con01_01>li{margin:20px 0;height: 175.8px;position: relative;}
 /*.con01_01>li:after{content:"or";width: 400px;color:white;text-align: center;}*/
-.con01_01>li>img{width: 450px;border-radius:8px;box-shadow: 0 0 10px #555;}
+.con01_01>li>img{width: 450px;border-radius:8px;box-shadow: 0 0 10px #111;}
 .con01_01>li>p{color:white;position: absolute;top: 35px;left: 45px;}
 
 
@@ -151,7 +164,7 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 }
 .con01_02>li{padding: 20px 0;position: relative;}
 .con01_02>li:nth-child(1) >img{
-	width: 450px;border-radius:8px;box-shadow: 0 0 10px #555;
+	width: 450px;border-radius:8px;box-shadow: 0 0 10px #111;
 }
 .con01_02>li:nth-child(1) >p{color:white;position: absolute;top: 70px;left: 50px;}
 
@@ -161,7 +174,7 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 .con01_02>li:nth-child(5){
 	width: 210px;height: 175.8px;float: left;border-radius: 8px;
 	background-color: #2e2e2e;margin-right: 30px;margin-bottom: 20px;
-	position: relative;box-shadow: 0 0 10px #555;
+	position: relative;box-shadow: 0 0 10px #111;
 }
 .con01_02>li:nth-child(3),
 .con01_02>li:nth-child(5){margin-right: 0;}
@@ -215,6 +228,7 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 
 .section{}
 .section .footer{padding:30px;}
-.section .footer ul{}
+.section .footer ul{width: 1500px;margin: 0 auto;}
+.section .footer ul img{float: left;width: 300px;padding-right: 100px;}
 .section .footer ul li{float: left;padding-right:30px;}
 .section .footer ul li a{display: block;color:white;}

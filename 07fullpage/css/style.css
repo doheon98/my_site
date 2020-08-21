@@ -9,7 +9,7 @@
 	background-position: center bottom 0px;
 	background-size: 20%;
 }
-#page2{background-image: url(../images/sec_package_v1.jpg);}
+#page2{background-color: #f3f3f3;}
 #page3{background-color: #222;}
 #page4{background-image: url(../images/sec_financial_bg.jpg);}
 /*#page4{background-image: url(../images/bg4.jpg);}*/
@@ -104,6 +104,14 @@ nav#navTop li.active{background-color:#debeb6;transition: 0.5s;}
 /*---02---*/
 #onViewTwo{left:10%;transition:0.3s;opacity:0;}
 #onViewTwo.move{left:50%;opacity:1;}
+
+#page2 img{
+	position: absolute;left: 50%;top: 60%;
+	transform:translate(-50%, -50%);
+}
+#page2 p{font-size:12px;color:#888;}
+
+
 
 /*---03---*/
 .section#page3{width: 100%;}

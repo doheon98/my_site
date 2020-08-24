@@ -14,6 +14,7 @@
 		$(document).ready(function(){
 			$(".slider").bxSlider({
 				auto:true,
+				controls:false
 			});
 			$(".cSlider01").bxSlider({
 				auto:true,
@@ -37,6 +38,18 @@
 			$(".top").click(function(){
 				$("html,body").animate({scrollTop:0},300);
 			});
+
+			$(".toggleMenu").click(function(){
+				console.log($(this).attr("class"));
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+					$("#header_top").addClass("change");
+				}else{
+					$(".toggleMenu").removeClass("change");
+					$("#header_top").removeClass("change");
+				}
+			});
 		});
 		
 	</script>
@@ -45,20 +58,21 @@
 	<header id="header" class="main">
 		<div id="header_top" class="clearfix">
 			<h1><a href="#"><img src="images/h1_cgv.png" alt=""></a></h1>
-			<nav id="main_menu">
-				<ul class="clearfix">
-					<li><a href="#">영화</a></li>
-					<li><a href="#">예매</a></li>
-					<li><a href="#">극장</a></li>
-					<li><a href="#">이벤트</a></li>
-					
-					<div class="toggleMenu">  <!-- 모바일용 토글버튼 -->
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-					</div>
-				</ul>
-			</nav>
+			
+				<nav id="main_menu">
+					<ul class="clearfix">
+						<li><a href="#">영화</a></li>
+						<li><a href="#">예매</a></li>
+						<li><a href="#">극장</a></li>
+						<li><a href="#">이벤트</a></li>					
+					</ul>
+				</nav>
+			
+			<div class="toggleMenu">  <!-- 모바일용 토글버튼 -->
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 		<div class="slider_wrap">
 			<ul class="slider">

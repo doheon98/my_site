@@ -710,3 +710,81 @@ div#content>div.conWrap{
 
 
 .action{background: #da281c;}
+
+/*sub_page01*/
+.spWrap01{height: 1000px;background: #fdfcf0;}
+.spWrap01>.img{
+	width: 100%;height: 460px;
+	position: absolute;top: 0;
+	background-image: url(../images/sp_con01.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+	border-bottom: 2px solid #da281c;
+}
+
+.spWrap01>ul{
+	width: 1260px;height: 70px;background: #fdfcf0;
+	position: absolute;top: 388px;left: 50%;
+	transform:translateX(-50%);
+}
+.spWrap01>ul>li{
+	float: left;width: 50%;border-right: 2px solid #ccc;
+}
+.spWrap01>ul>li:last-child{border-right: none;}
+.spWrap01>ul>li>a:hover{background: #da281c;color:white;}
+.spWrap01>ul>li>a{
+	display: block;text-align: center;line-height: 70px;
+	font-weight:bold;font-size:18px;
+}
+.navTxt{
+	width: 1260px;_height: 2500px;
+	position: absolute;top: 500px;left: 50%;
+	transform:translateX(-50%);
+}
+.navTxt a{font-size: 14px;font-weight:bolder;}
+.mc{}
+.mc>img{position: absolute;top: 600px;left: 50%;transform:translateX(-50%)}
+
+
+
+.action{background: #da281c;}
+
+/*sub_page02*/
+.spWrap02{height: 300px;background: #fdfcf0;}
+.spWrap02>.img{
+	width: 100%;height: 460px;
+	position: absolute;top: 0;
+	background-image: url(../images/sp_con01.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+	border-bottom: 2px solid #da281c;
+}
+
+.spWrap02>ul{
+	width: 1260px;height: 70px;background: #fdfcf0;
+	position: absolute;top: 388px;left: 50%;
+	transform:translateX(-50%);
+}
+.spWrap02>ul>li{
+	float: left;width: 50%;border-right: 2px solid #ccc;
+}
+.spWrap02>ul>li:last-child{border-right: none;}
+.spWrap02>ul>li>a:hover{background: #da281c;color:white;}
+.spWrap02>ul>li>a{
+	display: block;text-align: center;line-height: 70px;
+	font-weight:bold;font-size:18px;
+}
+.navTxt{
+	width: 1260px;_height: 2500px;
+	position: absolute;top: 500px;left: 50%;
+	transform:translateX(-50%);
+}
+.navTxt a{font-size: 14px;font-weight:bolder;}
+.mt{}
+.mt>img{position: absolute;top: 600px;left: 50%;transform:translateX(-50%)}
+
+
+
+.action{background: #da281c;}
